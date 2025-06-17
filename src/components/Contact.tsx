@@ -94,7 +94,6 @@ export default function Contact() {
             name="_next"
             value="https://demosmap-web.vercel.app/email-send"
           />
-          <input type="hidden" name="_captcha" value="false" />
         </form>
       </div>
     </section>
