@@ -12,13 +12,12 @@ export default function ColumsService({
   description,
 }: ColumsServiceProps) {
   return (
-    <div className=" max-w-[350px] text-white  space-y-4">
-      <div className="h-16 w-16 rounded-[50%] border border-white flex justify-center items-center">
+    <div className="max-w-[320px] w-full text-white space-y-6 flex flex-col items-center text-center px-2">
+      <div className="h-16 w-16 rounded-full border border-white flex justify-center items-center">
         <Image src={iconSrc} alt="Icon" width={32} height={32} />
       </div>
-
-      <h4 className="font-semibold">{title}</h4>
-      <p>{description}</p>
+      <h4 className="font-semibold text-xl">{title}</h4>
+      <p className="text-sm opacity-90">{description}</p>
     </div>
   );
 }

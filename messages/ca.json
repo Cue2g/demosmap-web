@@ -1,10 +1,11 @@
 {
   "Header": {
     "title": "Comprèn opinions,",
-    "title2": "Transforma realitats.",
+    "title2": "transforma realitats.",
     "button": "Sol·licita una demo"
   },
   "AboutSection": {
+    "video": "videoCA",
     "title": "Què és Demosmap?",
     "description": "Demosmap és un programari que permet fer qüestionaris personalitzats amb la capacitat de visualitzar opinions d'una manera geolocalitzada i l'enviament posterior de comunicacions massives per WhatsApp segmentant segons cada subconjunt de respostes.",
     "button": "Veure vídeo explicatiu"
@@ -18,7 +19,7 @@
       "phoneIconAlt": "Icona de telèfon",
       "email": "Correu Electrònic",
       "emailIconAlt": "Icona de correu",
-      "company": "Nom de l'Empresa o Organització",
+      "company": "Empresa o Organització",
       "companyIconAlt": "Icona d'empresa"
     },
     "button": "Solicitar"
@@ -59,7 +60,7 @@
     },
     "service2": {
       "title": "Grau de representativitat científica garantida",
-      "description": "emosmap assegura la representativitat i fiabilitat dels resultats aplicant rigorosos criteris estadístics que garanteixen que l’enquesta sigui representativa i fiable."
+      "description": "Demosmap assegura la representativitat i fiabilitat dels resultats aplicant rigorosos criteris estadístics que garanteixen que l’enquesta sigui representativa i fiable."
     },
     "service3": {
       "title": "Ús de WhatsApp per enviaments microsegmentats",

@@ -83,17 +83,20 @@ export default function Diagram() {
 
   if (isMobile) {
     return (
-      <div className="w-full min-h-screen bg-[#0A0B37] text-white flex flex-col items-center justify-center gap-6 py-10 px-4">
-        <div className="text-center font-semibold">
-          <p className="text-lg">{t("title")}</p>
-          <div className="w-12 h-[2px] bg-white mx-auto my-2" />
+      <div className="w-full min-h-screen bg-[#0A0B37] text-white flex flex-col items-center justify-start gap-6 py-8 px-6">
+        <div className="text-center font-semibold max-w-[90%] mx-auto">
+          <p className="text-xl sm:text-2xl">{t("title")}</p>
+          <div className="w-16 h-[3px] bg-blue-400 mx-auto my-3 rounded" />
         </div>
         {stepsData.map(({ label, textKey }, i) => (
-          <div key={i} className="flex items-start gap-4 max-w-[90%] text-sm">
-            <div className="w-8 h-8 rounded-full bg-[#3090FF] text-white text-xs font-bold flex items-center justify-center shadow-md">
+          <div
+            key={i}
+            className="flex items-start gap-4 max-w-[90%] text-base sm:text-lg"
+          >
+            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#3090FF] text-white text-sm font-bold flex items-center justify-center shadow-md select-none">
               {label}
             </div>
-            <p>{t(textKey)}</p>
+            <p className="leading-relaxed">{t(textKey)}</p>
           </div>
         ))}
       </div>
@@ -113,7 +116,9 @@ export default function Diagram() {
         {waveSizes.map((circleSize, i) => (
           <div
             key={i}
-            className={`absolute rounded-full border z-0 ${i > 0 ? "border-[#1D1E60]" : "border-[#3A80EB]"}`}
+            className={`absolute rounded-full border z-0 ${
+              i > 0 ? "border-[#1D1E60]" : "border-[#3A80EB]"
+            }`}
             style={{
               width: `${circleSize}px`,
               height: `${circleSize}px`,
@@ -150,12 +155,10 @@ export default function Diagram() {
               }}
             >
               <div className="relative flex items-center justify-center">
-                <div className="w-8 h-8 rounded-full bg-[#3090FF] text-white text-xs font-bold flex items-center justify-center shadow-md z-10">
+                <div className="w-8 h-8 rounded-full bg-[#3090FF] text-white text-xs font-bold flex items-center justify-center shadow-md z-10 select-none">
                   {label}
                 </div>
-                <div
-                  className={`absolute text-white text-sm w-[200px] ${align}`}
-                >
+                <div className={`absolute text-white text-sm w-[200px] ${align}`}>
                   {t(textKey)}
                 </div>
               </div>

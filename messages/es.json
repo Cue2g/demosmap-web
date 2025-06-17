@@ -1,10 +1,11 @@
 {
   "Header": {
     "title": "Comprende opiniones,",
-    "title2": "Transforma realidades.",
+    "title2": "transforma realidades.",
     "button": "Solicitar una demo"
   },
   "AboutSection": {
+    "video": "videoES",
     "title": "¿Qué es Demosmap?",
     "description": "Demosmap es un software que permite realizar cuestionarios personalizados con capacidad de visualizar opiniones de un modo geolocalizado y el posterior envío de comunicaciones masivas por WhatsApp segmentando en función a cada subconjunto de respuestas.",
     "button": "Ver video explicativo"
@@ -18,7 +19,7 @@
       "phoneIconAlt": "Icono de teléfono",
       "email": "Correo Electrónico",
       "emailIconAlt": "Icono de correo",
-      "company": "Nombre de la Empresa o Organización",
+      "company": "Empresa o Organización",
       "companyIconAlt": "Icono de empresa"
     },
     "button": "Solicitar"
@@ -42,7 +43,7 @@
     "whatsapp": "Whatsapp",
     "x": "X",
     "fundedByEU": "Financiado por la Unión Europea - Next GenerationEU",
-    "copyright": "© 2023. Handcrafted with love by Mr. Addison"
+    "copyright": "© 2023. Handcrafted with love by Mr. Addison"
   },
   "Nav": {
     "langEsp": "ESP",
@@ -59,15 +60,15 @@
     },
     "service2": {
       "title": "Grado de representatividad científica garantizado",
-      "description": "emosmap asegura la representatividad y fiabilidad de los resultados aplicando rigurosos criterios estadísticos que garantizan que la encuesta sea representativa y fiable."
+      "description": "Demosmap asegura la representatividad y fiabilidad de los resultados aplicando rigurosos criterios estadísticos que garantizan que la encuesta sea representativa y fiable."
     },
     "service3": {
-      "title": "Uso de whatsapp para envíos micro segmentados",
+      "title": "Uso de WhatsApp para envíos micro segmentados",
       "description": "Conecta directamente con tu público. Te damos la posibilidad de segmentar tu audiencia de interés para el posterior envío de comunicaciones vía WhatsApp."
     }
   },
   "TargetAudience": {
-    "title": "A quién nos <br /> dirigimos",
+    "title": "A quién nos dirigimos",
     "publicInstitutions": {
       "title": "Instituciones públicas",
       "item1": "Administraciones locales",

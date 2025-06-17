@@ -10,114 +10,70 @@ export default function Contact() {
       <Image
         src="/contact.png"
         alt={t("imageAlt")}
-        className="absolute inset-0  object-cover z-0"
+        className="absolute inset-0 object-cover z-0"
         fill
       />
 
-      <div className="absolute inset-0 flex justify-center items-center flex-col">
-        <form className="w-full max-w-[400px] space-y-8">
-          {/* Nombre y Apellido */}
-          <div className="relative z-0 group">
-            <input
-              type="text"
-              name="full_name"
-              id="full_name"
-              className="pt-4 block py-2.5 pl-10 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer"
-              placeholder=" "
-              required
-            />
-            <label
-              htmlFor="full_name"
-              className="flex peer-focus:font-medium absolute text-lg text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-            >
-              <Image
-                src="User.svg"
-                alt={t("labels.full_nameIconAlt")}
-                width={20}
-                height={20}
-                className="mr-8"
+      <div className="absolute inset-0 flex justify-center items-center px-4">
+        <form className="w-full max-w-md space-y-8 bg-black/60 backdrop-blur-md p-6 rounded-xl z-10">
+          {/* Input genérico */}
+          {[
+            {
+              name: "full_name",
+              type: "text",
+              icon: "User.svg",
+              label: t("labels.full_name"),
+              alt: t("labels.full_nameIconAlt"),
+            },
+            {
+              name: "phone",
+              type: "tel",
+              icon: "TFL.svg",
+              label: t("labels.phone"),
+              alt: t("labels.phoneIconAlt"),
+            },
+            {
+              name: "email",
+              type: "email",
+              icon: "Mail.svg",
+              label: t("labels.email"),
+              alt: t("labels.emailIconAlt"),
+            },
+            {
+              name: "company",
+              type: "text",
+              icon: "Home.svg",
+              label: t("labels.company"),
+              alt: t("labels.companyIconAlt"),
+            },
+          ].map(({ name, type, icon, label, alt }) => (
+            <div key={name} className="relative z-0 group">
+              <input
+                type={type}
+                name={name}
+                id={name}
+                className="pt-4 block py-2.5 pl-10 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer"
+                placeholder=" "
+                required
               />
-              {t("labels.full_name")} *
-            </label>
-          </div>
-
-          {/* Teléfono */}
-          <div className="relative z-0 group">
-            <input
-              type="tel"
-              name="phone"
-              id="phone"
-              className="pt-4 block py-2.5 pl-10 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer"
-              placeholder=" "
-              required
-            />
-            <label
-              htmlFor="phone"
-              className="flex peer-focus:font-medium absolute text-lg text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-            >
-              <Image
-                src="TFL.svg"
-                alt={t("labels.phoneIconAlt")}
-                width={20}
-                height={20}
-                className="mr-8"
-              />
-              {t("labels.phone")} *
-            </label>
-          </div>
-
-          {/* Correo Electrónico */}
-          <div className="relative z-0 group">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              className="pt-4 block py-2.5 pl-10 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer"
-              placeholder=" "
-              required
-            />
-            <label
-              htmlFor="email"
-              className="flex peer-focus:font-medium absolute text-lg text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-            >
-              <Image
-                src="Mail.svg"
-                alt={t("labels.emailIconAlt")}
-                width={20}
-                height={20}
-                className="mr-8"
-              />
-              {t("labels.email")} *
-            </label>
-          </div>
-
-          {/* Empresa u Organización */}
-          <div className="relative z-0 group">
-            <input
-              type="text"
-              name="company"
-              id="company"
-              className="pt-4 block py-2.5 pl-10 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer"
-              placeholder=" "
-              required
-            />
-            <label
-              htmlFor="company"
-              className="flex peer-focus:font-medium absolute text-lg text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-            >
-              <Image
-                src="Home.svg"
-                alt={t("labels.companyIconAlt")}
-                width={20}
-                height={20}
-                className="mr-8"
-              />
-              {t("labels.company")} *
-            </label>
-          </div>
+              <label
+                htmlFor={name}
+                className="flex peer-focus:font-medium absolute text-lg text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >
+                <Image
+                  src={icon}
+                  alt={alt}
+                  width={20}
+                  height={20}
+                  className="mr-4"
+                />
+                {label} *
+              </label>
+            </div>
+          ))}
 
           <div className="flex justify-center">
-            <button className="w-[97px] h-auto px-4 py-2 bg-blue-500 text-white text-center rounded-[10px]">
+            <button className="w-[120px] px-4 py-2 bg-blue-500 hover:bg-blue-600 transition-colors text-white text-center rounded-[10px] font-medium">
               {t("button")}
             </button>
           </div>

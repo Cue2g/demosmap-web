@@ -39,7 +39,7 @@ export default function AboutSection() {
               controls
               className="mx-auto w-full max-w-xl rounded shadow-lg"
             >
-              <source src="/video.webm" type="video/webm" />
+              <source src={`/${t("video")}.webm`} type="video/webm" />
             </video>
           </div>
         )}
