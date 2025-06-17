@@ -44,7 +44,9 @@ export default function Nav() {
       {/* Logo */}
       <div id="logo" className="flex items-center space-x-2">
         <Image width={48} height={51} src="demosmapLogo.svg" alt="Logo" />
-        <Image width={145} height={24} src="Wordmark.svg" alt="Wordmark" />
+        <div className="hidden xl:block">
+          <Image width={145} height={24} src="Wordmark.svg" alt="Wordmark" />
+        </div>
       </div>
 
       {/* Desktop Menu */}
@@ -78,8 +80,10 @@ export default function Nav() {
 
       {/* Mobile Menu Drawer */}
       {open && (
-        <div className="absolute top-[80px] left-0 w-full bg-white/80 px-6 py-6 flex flex-col gap-6 font-bold md:hidden
-             transition-all duration-300 ease-out transform animate-slideDown">
+        <div
+          className="absolute top-[80px] left-0 w-full bg-white/80 px-6 py-6 flex flex-col gap-6 font-bold md:hidden
+             transition-all duration-300 ease-out transform animate-slideDown"
+        >
           <a href="#about" onClick={() => setOpen(false)}>
             {t("demosmap")}
           </a>

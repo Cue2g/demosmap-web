@@ -7,7 +7,7 @@ export default function Footer() {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="py-16 px-6 md:px-12 lg:px-24 flex flex-col items-stretch bg-[#0A0B37] text-white">
+    <footer className="py-16 px-6 md:px-12 lg:px-24 flex flex-col items-stretch bg-[#0A0726] text-white">
       {/* Top section */}
       <div className="flex flex-col md:flex-row w-full gap-12">
         {/* Left: logo + contact */}
@@ -43,11 +43,12 @@ export default function Footer() {
           {/* Social links */}
           <div className="flex flex-col gap-2 text-sm md:text-base">
             <a href="#" target="_blank" rel="noopener noreferrer">
-              {t("instagram")}
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
               {t("whatsapp")}
             </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              {t("linkedin")}
+            </a>
+
             <a href="#" target="_blank" rel="noopener noreferrer">
               {t("x")}
             </a>

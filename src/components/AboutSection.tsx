@@ -1,18 +1,37 @@
 "use client";
-import { useState, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 
 export default function AboutSection() {
   const t = useTranslations("AboutSection");
-  const [showVideo, setShowVideo] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  const handleClick = () => {
-    setShowVideo(true);
-    setTimeout(() => {
-      videoRef.current?.play();
-    }, 0);
-  };
+  useEffect(() => {
+    const videoEl = videoRef.current;
+    if (!videoEl) return;
+
+    // Opciones del observer: activamos cuando al menos 50% del video está visible
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            videoEl.play().catch(() => {
+              console.log("error reproduciendo video");
+            });
+          } else {
+            videoEl.pause();
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    observer.observe(videoEl);
+
+    return () => {
+      observer.unobserve(videoEl);
+    };
+  }, []);
 
   return (
     <section id="about" className="bg-white py-16 px-6 md:px-12">
@@ -25,24 +44,18 @@ export default function AboutSection() {
         <p className="text-lg text-gray-700 leading-relaxed">
           {t("description")}
         </p>
-        <button
-          onClick={handleClick}
-          className="px-6 py-2 w-[216px] h-12 bg-blue-500 text-white rounded-[10px]"
-        >
-          {t("button")}
-        </button>
 
-        {showVideo && (
-          <div className="mt-6">
-            <video
-              ref={videoRef}
-              controls
-              className="mx-auto w-full max-w-xl rounded shadow-lg"
-            >
-              <source src={`/${t("video")}.webm`} type="video/webm" />
-            </video>
-          </div>
-        )}
+        <div className="mt-6">
+          <video
+            ref={videoRef}
+            controls
+            className="mx-auto w-full max-w-xxl rounded shadow-lg"
+            muted // mutear para evitar bloqueo autoplay en navegadores
+            playsInline // para mejor comportamiento en móviles
+          >
+            <source src={`/${t("video")}.webm`} type="video/webm" />
+          </video>
+        </div>
       </div>
     </section>
   );
