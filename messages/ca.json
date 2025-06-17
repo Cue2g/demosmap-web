@@ -1,0 +1,83 @@
+{
+  "Header": {
+    "title": "Comprèn opinions,",
+    "title2": "Transforma realitats.",
+    "button": "Sol·licita una demo"
+  },
+  "AboutSection": {
+    "title": "Què és Demosmap?",
+    "description": "Demosmap és un programari que permet fer qüestionaris personalitzats amb la capacitat de visualitzar opinions d'una manera geolocalitzada i l'enviament posterior de comunicacions massives per WhatsApp segmentant segons cada subconjunt de respostes.",
+    "button": "Veure vídeo explicatiu"
+  },
+  "Contact": {
+    "imageAlt": "Contacte",
+    "labels": {
+      "full_name": "Nom i Cognoms",
+      "full_nameIconAlt": "Icona de nom",
+      "phone": "Telèfon",
+      "phoneIconAlt": "Icona de telèfon",
+      "email": "Correu Electrònic",
+      "emailIconAlt": "Icona de correu",
+      "company": "Nom de l'Empresa o Organització",
+      "companyIconAlt": "Icona d'empresa"
+    },
+    "button": "Solicitar"
+  },
+  "Diagram": {
+    "title": "Com funciona",
+    "step1": "El Client vol saber l’opinió ciutadana sobre un assumpte.",
+    "step2": "Elabora un microqüestionari",
+    "step3": "Mitjançant un enllaç personalitzat, el fa arribar als seus públics objectius",
+    "step4": "La ciutadania comparteix la seva opinió.",
+    "step5": "El client pot analitzar resultats en temps real.",
+    "step6": "Generar campanyes segmentades per WhatsApp adreçades a cada públic d’interès."
+  },
+  "Footer": {
+    "faqs": "FAQS",
+    "cookiePolicy": "Política de Cookies",
+    "privacyPolicy": "Política de Privacitat",
+    "termsConditions": "Termes i Condicions",
+    "accessibilityStatement": "Declaració d'accessibilitat",
+    "instagram": "Instagram",
+    "whatsapp": "Whatsapp",
+    "x": "X",
+    "fundedByEU": "Finançat per la Unió Europea - Next GenerationEU",
+    "copyright": "© 2023. Fet a mà amb estima per Mr. Addison"
+  },
+  "Nav": {
+    "langEsp": "ESP",
+    "langCat": "CAT",
+    "login": "Iniciar sessió",
+    "demosmap": "Demosmap",
+    "features": "Funcionalitats",
+    "requestDemo": "Sol·licitar una demo"
+  },
+  "Services": {
+    "service1": {
+      "title": "Geolocalitza els resultats a través de mapes de calor",
+      "description": "Visualitza els resultats de manera clara i precisa, utilitzant mapes de calor geolocalitzats que et permeten analitzar la distribució de dades."
+    },
+    "service2": {
+      "title": "Grau de representativitat científica garantida",
+      "description": "emosmap assegura la representativitat i fiabilitat dels resultats aplicant rigorosos criteris estadístics que garanteixen que l’enquesta sigui representativa i fiable."
+    },
+    "service3": {
+      "title": "Ús de WhatsApp per enviaments microsegmentats",
+      "description": "Connecta directament amb el teu públic. T’oferim la possibilitat de segmentar la teva audiència d’interès per al posterior enviament de comunicacions via WhatsApp."
+    }
+  },
+  "TargetAudience": {
+    "title": "A qui ens <br /> adrecem",
+    "publicInstitutions": {
+      "title": "Institucions públiques",
+      "item1": "Administracions locals",
+      "item2": "Institucions d'opinió pública"
+    },
+    "privateSector": {
+      "title": "Sector Privat",
+      "item1": "Empreses del sector serveis",
+      "item2": "Grups d'interès",
+      "item3": "Empreses demoscòpiques"
+    }
+  }
+}

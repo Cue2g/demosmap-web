@@ -1,29 +1,38 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export default function TargetAudience() {
+  const t = useTranslations("TargetAudience");
+
   return (
     <section className="bg-[#0A0726] w-full text-white py-24 px-12 md:px-26 flex gap-8 z-50">
       <div className="basis-[40%] justify-center flex">
-        <p className="font-semibold text-4xl">
-          A quién nos <br /> dirigimos
-        </p>
+        <p
+          className="font-semibold text-4xl"
+          dangerouslySetInnerHTML={{ __html: t("title") }}
+        />
       </div>
 
-      <div className="basis-[60%] flex  justify-center gap-10">
+      <div className="basis-[60%] flex justify-center gap-10">
         <div>
           <span className="text-blue-600 block mb-2">
-            Instituciones públicas
+            {t("publicInstitutions.title")}
           </span>
           <ul className="list-disc list-inside">
-            <li>Administraciones locales</li>
-            <li>Instituciones de opinión pública</li>
+            <li>{t("publicInstitutions.item1")}</li>
+            <li>{t("publicInstitutions.item2")}</li>
           </ul>
         </div>
 
         <div>
-          <span className="text-blue-600 block mb-2">Sector Privado</span>
+          <span className="text-blue-600 block mb-2">
+            {t("privateSector.title")}
+          </span>
           <ul className="list-disc list-inside">
-            <li>Empresas del sector servicios</li>
-            <li>Grupos de interés</li>
-            <li>Empresas demoscópicas</li>
+            <li>{t("privateSector.item1")}</li>
+            <li>{t("privateSector.item2")}</li>
+            <li>{t("privateSector.item3")}</li>
           </ul>
         </div>
       </div>

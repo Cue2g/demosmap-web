@@ -1,16 +1,20 @@
+"use client";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function Contact() {
+  const t = useTranslations("Contact");
+
   return (
     <section className="relative w-full min-h-screen bg-gray-900">
       <Image
         src="/contact.png"
-        alt="Contact"
+        alt={t("imageAlt")}
         className="absolute inset-0  object-cover z-0"
         fill
       />
 
-      <div className="absolute inset-0 flex justify-center items-center flex-col  ">
+      <div className="absolute inset-0 flex justify-center items-center flex-col">
         <form className="w-full max-w-[400px] space-y-8">
           {/* Nombre y Apellido */}
           <div className="relative z-0 group">
@@ -28,12 +32,12 @@ export default function Contact() {
             >
               <Image
                 src="User.svg"
-                alt="Nombre icon"
+                alt={t("labels.full_nameIconAlt")}
                 width={20}
                 height={20}
                 className="mr-8"
               />
-              Nombre y Apellido *
+              {t("labels.full_name")} *
             </label>
           </div>
 
@@ -53,12 +57,12 @@ export default function Contact() {
             >
               <Image
                 src="TFL.svg"
-                alt="Teléfono icon"
+                alt={t("labels.phoneIconAlt")}
                 width={20}
                 height={20}
                 className="mr-8"
               />
-              Teléfono *
+              {t("labels.phone")} *
             </label>
           </div>
 
@@ -78,12 +82,12 @@ export default function Contact() {
             >
               <Image
                 src="Mail.svg"
-                alt="Correo icon"
+                alt={t("labels.emailIconAlt")}
                 width={20}
                 height={20}
                 className="mr-8"
               />
-              Correo Electrónico *
+              {t("labels.email")} *
             </label>
           </div>
 
@@ -103,18 +107,18 @@ export default function Contact() {
             >
               <Image
                 src="Home.svg"
-                alt="Empresa icon"
+                alt={t("labels.companyIconAlt")}
                 width={20}
                 height={20}
                 className="mr-8"
               />
-              Nombre de la Empresa o Organización *
+              {t("labels.company")} *
             </label>
           </div>
 
           <div className="flex justify-center">
             <button className="w-[97px] h-auto px-4 py-2 bg-blue-500 text-white text-center rounded-[10px]">
-              Solicitar
+              {t("button")}
             </button>
           </div>
         </form>
