@@ -21,7 +21,7 @@ function SelectorLang({ mobile = false }: { mobile?: boolean }) {
     <div className={`flex flex-col ${mobile ? "gap-4" : "flex-row gap-2"}`}>
       <button
         onClick={toggleLocale}
-        className="w-[97px] h-auto px-4 py-2 bg-transparent border-blue-500 border rounded-[10px] text-blue-500"
+        className="w-[97px] h-auto px-4 py-2 bg-transparent cursor-pointer border-blue-500 border rounded-[10px] text-blue-500"
       >
         {locale === "es" ? t("langCat") : t("langEsp")}
       </button>

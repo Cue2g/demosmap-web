@@ -25,9 +25,9 @@ export default function Header() {
           {t("title")} <br className="hidden sm:block" /> {t("title2")}
         </h2>
 
-        <button className="px-6 py-3 w-full max-w-[216px] h-12 bg-blue-500 text-white rounded-[10px]">
+        <a href="#contact"  className="px-6 py-3 w-full max-w-[216px] h-12 bg-blue-500 text-white rounded-[10px]">
           {t("button")}
-        </button>
+        </a>
       </div>
 
       {/* Flecha inferior */}
