@@ -82,5 +82,11 @@
       "item2": "Grupos de interés",
       "item3": "Empresas demoscópicas"
     }
+ 
+  },
+     "Thanks": {
+    "title": "¡Gracias por contactarnos!",
+    "message": "Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible. Agradecemos tu interés y la confianza depositada en nosotros.",
+    "button": "Volver al inicio"
   }
 }

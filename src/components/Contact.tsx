@@ -16,7 +16,11 @@ export default function Contact() {
 
       <div className="absolute inset-0 flex-col flex justify-center items-center px-4">
         <h3 className="text-2xl font-bold text-white">{t("title")}</h3>
-        <form className="w-full max-w-md space-y-8 backdrop-blur-md p-6 rounded-xl z-10">
+        <form
+          action="https://formsubmit.co/gustavoblancog29@gmail.com"
+          method="POST"
+          className="w-full max-w-md space-y-8 backdrop-blur-md p-6 rounded-xl z-10"
+        >
           {/* Input genérico */}
           {[
             {
@@ -53,9 +57,10 @@ export default function Contact() {
                 type={type}
                 name={name}
                 id={name}
-                className="pt-4 block py-2.5 pl-10 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer"
+                className="pt-4 block py-2.5 pl-10 w-full text-md text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer"
                 placeholder=" "
                 required
+                autoComplete="off"
               />
               <label
                 htmlFor={name}
@@ -78,6 +83,18 @@ export default function Contact() {
               {t("button")}
             </button>
           </div>
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="Nuevo mensaje desde el formulario de contacto"
+          />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://demosmap-web.vercel.app/email-send"
+          />
+          <input type="hidden" name="_captcha" value="false" />
         </form>
       </div>
     </section>
