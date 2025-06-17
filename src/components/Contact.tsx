@@ -17,7 +17,7 @@ export default function Contact() {
       <div className="absolute inset-0 flex-col flex justify-center items-center px-4">
         <h3 className="text-2xl font-bold text-white">{t("title")}</h3>
         <form
-          action="https://formsubmit.co/info@demosmap.com"
+          action="https://formspree.io/f/xqableob"
           method="POST"
           className="w-full max-w-md space-y-8 backdrop-blur-md p-6 rounded-xl z-10"
         >
@@ -83,17 +83,6 @@ export default function Contact() {
               {t("button")}
             </button>
           </div>
-
-          <input
-            type="hidden"
-            name="_subject"
-            value="Nuevo mensaje desde el formulario de contacto"
-          />
-          <input
-            type="hidden"
-            name="_next"
-            value="https://demosmap-web.vercel.app/email-send"
-          />
         </form>
       </div>
     </section>
