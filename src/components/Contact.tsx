@@ -15,7 +15,7 @@ export default function Contact() {
       />
 
       <div className="absolute inset-0 flex justify-center items-center px-4">
-        <form className="w-full max-w-md space-y-8 bg-black/60 backdrop-blur-md p-6 rounded-xl z-10">
+        <form className="w-full max-w-md space-y-8 backdrop-blur-md p-6 rounded-xl z-10">
           {/* Input genérico */}
           {[
             {
