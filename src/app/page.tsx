@@ -6,6 +6,7 @@ import ImageSection from "@/components/ImageSection";
 import TargetAudience from "@/components/TargetAudience";
 import Diagram from "@/components/Diagram";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <TargetAudience />
       <Diagram />
       <Contact />
+      <Footer />
     </div>
   );
 }
