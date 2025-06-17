@@ -2,8 +2,15 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+import { useForm } from '@formspree/react';
+
 export default function Contact() {
   const t = useTranslations("Contact");
+
+const [state, handleSubmit] = useForm("mblykgrj");
+   if (state.succeeded) {
+      window.location.href = "/email-send";
+  }
 
   return (
     <section id="contact" className="relative w-full min-h-screen bg-gray-900">
@@ -17,9 +24,8 @@ export default function Contact() {
       <div className="absolute inset-0 flex-col flex justify-center items-center px-4">
         <h3 className="text-2xl font-bold text-white">{t("title")}</h3>
         <form
-          action="https://formspree.io/f/xqableob"
-          method="POST"
-          className="w-full max-w-md space-y-8 backdrop-blur-md p-6 rounded-xl z-10"
+          onSubmit={handleSubmit}
+          className="w-full max-w-md space-y-8  p-6 z-10"
         >
           {/* Input genérico */}
           {[
@@ -79,10 +85,11 @@ export default function Contact() {
           ))}
 
           <div className="flex justify-center">
-            <button className="w-[120px] px-4 py-2 bg-blue-500 hover:bg-blue-600 transition-colors text-white text-center rounded-[10px] font-medium">
+            <button type="submit" disabled={state.submitting} className="w-[120px] px-4 py-2 bg-blue-500 hover:bg-blue-600 transition-colors text-white text-center rounded-[10px] font-medium">
               {t("button")}
             </button>
           </div>
+
         </form>
       </div>
     </section>
