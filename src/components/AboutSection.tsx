@@ -15,7 +15,7 @@ export default function AboutSection() {
   };
 
   return (
-    <section className="bg-white py-16 px-6 md:px-12">
+    <section id="about" className="bg-white py-16 px-6 md:px-12">
       <div className="max-w-4xl mx-auto text-center space-y-6">
         <div className="flex justify-center">
           <h2 className="relative w-fit text-3xl font-bold text-gray-900 p-2 border-b-2 border-b-blue-600">

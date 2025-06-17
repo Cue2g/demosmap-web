@@ -26,7 +26,7 @@ function SelectorLang() {
       </button>
       <a
         className="w-[97px] h-auto px-4 py-2 bg-blue-500 text-white text-center rounded-[10px]"
-        href="#test"
+        href="https://app.demosmap.com/"
       >
         Login
       </a>
@@ -50,9 +50,9 @@ export default function Nav() {
       </div>
       <div className="flex gap-8">
         <div className="flex gap-8 font-bold text-white">
-          <a href="#">{t("demosmap")}</a>
-          <a href="#">{t("features")}</a>
-          <a href="#">{t("requestDemo")}</a>
+          <a href="#about">{t("demosmap")}</a>
+          <a href="#diagram-container">{t("features")}</a>
+          <a href="#contact">{t("requestDemo")}</a>
         </div>
         <SelectorLang />
       </div>

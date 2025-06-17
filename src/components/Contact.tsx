@@ -6,7 +6,7 @@ export default function Contact() {
   const t = useTranslations("Contact");
 
   return (
-    <section className="relative w-full min-h-screen bg-gray-900">
+    <section id="contact" className="relative w-full min-h-screen bg-gray-900">
       <Image
         src="/contact.png"
         alt={t("imageAlt")}
