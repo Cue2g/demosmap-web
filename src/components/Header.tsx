@@ -25,7 +25,10 @@ export default function Header() {
           {t("title")} <br className="hidden sm:block" /> {t("title2")}
         </h2>
 
-        <a href="#contact"  className="px-6 py-3 w-full max-w-[216px] h-12 bg-blue-500 text-white rounded-[10px]">
+        <a
+          href="#contact"
+          className="px-6  font-bold py-3 w-full max-w-[216px] h-12 bg-blue-500 text-white rounded-[10px] flex items-center justify-center text-center overflow-hidden text-ellipsis whitespace-nowrap"
+        >
           {t("button")}
         </a>
       </div>

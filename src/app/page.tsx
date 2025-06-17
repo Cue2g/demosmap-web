@@ -5,7 +5,7 @@ import Services from "@/components/Services";
 import ImageSection from "@/components/ImageSection";
 import TargetAudience from "@/components/TargetAudience";
 import Diagram from "@/components/Diagram";
-// import Contact from "@/components/Contact";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       <ImageSection />
       <TargetAudience />
       <Diagram />
-      {/* <Contact /> */}
+      <Contact />
       <Footer />
     </div>
   );

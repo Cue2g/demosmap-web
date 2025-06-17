@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function Footer() {
   const t = useTranslations("Footer");
@@ -23,21 +24,21 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row gap-8 flex-1 justify-between">
           {/* Legal links */}
           <div className="flex flex-col gap-2 text-sm md:text-base">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <Link href="/faqs"  rel="noopener noreferrer">
               {t("faqs")}
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="/politica-de-cookies"  rel="noopener noreferrer">
               {t("cookiePolicy")}
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="/politica-de-privacidad" rel="noopener noreferrer">
               {t("privacyPolicy")}
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="/terminos-y-condiciones" rel="noopener noreferrer">
               {t("termsConditions")}
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="/declaracion"  rel="noopener noreferrer">
               {t("accessibilityStatement")}
-            </a>
+            </Link>
           </div>
 
           {/* Social links */}

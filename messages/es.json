@@ -2,7 +2,7 @@
   "Header": {
     "title": "Comprende opiniones,",
     "title2": "transforma realidades.",
-    "button": "Solicitar una demo"
+    "button": "Solicita más información"
   },
   "AboutSection": {
     "video": "videoES",
@@ -11,6 +11,7 @@
     "button": "Ver video explicativo"
   },
   "Contact": {
+    "title": "Solicita más información",
     "imageAlt": "Contacto",
     "labels": {
       "full_name": "Nombre y Apellido",
@@ -40,7 +41,7 @@
     "termsConditions": "Términos y Condiciones",
     "accessibilityStatement": "Declaración de accesibilidad",
     "instagram": "Instagram",
-    "whatsapp": "Whatsapp",
+    "whatsapp": "WhatsApp",
     "linkedin": "LinkedIn",
     "x": "X",
     "fundedByEU": "Financiado por la Unión Europea - Next GenerationEU",
@@ -51,7 +52,7 @@
     "login": "Login",
     "demosmap": "Demosmap",
     "features": "Funcionalidades",
-    "requestDemo": "Solicitar una demo",
+    "requestDemo": "Solicita más información",
     "langCat": "CAT"
   },
   "Services": {

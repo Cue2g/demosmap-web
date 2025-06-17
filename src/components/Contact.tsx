@@ -14,7 +14,8 @@ export default function Contact() {
         fill
       />
 
-      <div className="absolute inset-0 flex justify-center items-center px-4">
+      <div className="absolute inset-0 flex-col flex justify-center items-center px-4">
+        <h3 className="text-2xl font-bold text-white">{t("title")}</h3>
         <form className="w-full max-w-md space-y-8 backdrop-blur-md p-6 rounded-xl z-10">
           {/* Input genérico */}
           {[

@@ -106,7 +106,7 @@ export default function Diagram() {
   return (
     <div
       ref={containerRef}
-      id="diagram-container"
+      id="diagram"
       className="relative w-full min-h-screen flex items-center justify-center bg-[#0A0B37] overflow-hidden px-4"
     >
       <div

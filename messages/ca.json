@@ -2,7 +2,7 @@
   "Header": {
     "title": "Comprèn opinions,",
     "title2": "transforma realitats.",
-    "button": "Sol·licita una demo"
+    "button": "Sol·licita més informació"
   },
   "AboutSection": {
     "video": "videoCA",
@@ -11,6 +11,7 @@
     "button": "Veure vídeo explicatiu"
   },
   "Contact": {
+    "title": "Sol·licita més informació",
     "imageAlt": "Contacte",
     "labels": {
       "full_name": "Nom i Cognoms",
@@ -40,7 +41,7 @@
     "termsConditions": "Termes i Condicions",
     "accessibilityStatement": "Declaració d'accessibilitat",
     "instagram": "Instagram",
-    "whatsapp": "Whatsapp",
+    "whatsapp": "WhatsApp",
     "linkedin": "LinkedIn",
     "x": "X",
     "fundedByEU": "Finançat per la Unió Europea - Next GenerationEU",
@@ -52,7 +53,7 @@
     "login": "Iniciar sessió",
     "demosmap": "Demosmap",
     "features": "Funcionalitats",
-    "requestDemo": "Sol·licitar una demo"
+    "requestDemo": "Sol·licita més informació"
   },
   "Services": {
     "service1": {
