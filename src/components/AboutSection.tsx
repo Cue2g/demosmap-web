@@ -1,8 +1,9 @@
 "use client";
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
-
+import { useLocale } from "next-intl";
 export default function AboutSection() {
+  const locale = useLocale();
   const t = useTranslations("AboutSection");
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -50,17 +51,19 @@ export default function AboutSection() {
             ref={videoRef}
             controls
             className="mx-auto w-full max-w-xxl rounded shadow-lg"
-            muted 
-            playsInline 
+            muted
+            playsInline
           >
             <source src={`/${t("video")}.webm`} type="video/webm" />
-            <track
-              src="en.vtt"
-              kind="subtitles"
-              srcLang="en"
-              label="English"
-              default
-            />
+            {locale === "en" && (
+              <track
+                src="en.vtt"
+                kind="subtitles"
+                srcLang="en"
+                label="English"
+                default
+              />
+            )}
           </video>
         </div>
       </div>
