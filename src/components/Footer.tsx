@@ -71,7 +71,6 @@ export default function Footer() {
         />
         <div className="text-sm md:text-right">
           <div>{t("fundedByEU")}</div>
-          <div className="font-light">{t("copyright")}</div>
         </div>
       </div>
     </footer>

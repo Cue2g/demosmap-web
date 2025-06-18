@@ -73,7 +73,7 @@ export default function Diagram() {
           });
         }
       },
-      { threshold: 0.3 },
+      { threshold: 0.3 }
     );
     if (containerRef.current) observer.observe(containerRef.current);
     return () => observer.disconnect();
@@ -88,17 +88,20 @@ export default function Diagram() {
           <p className="text-xl sm:text-2xl">{t("title")}</p>
           <div className="w-16 h-[3px] bg-blue-400 mx-auto my-3 rounded" />
         </div>
-        {stepsData.map(({ label, textKey }, i) => (
-          <div
-            key={i}
-            className="flex items-start gap-4 max-w-[90%] text-base sm:text-lg"
-          >
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#3090FF] text-white text-sm font-bold flex items-center justify-center shadow-md select-none">
-              {label}
+
+        <div className="gap-5 flex flex-col">
+          {stepsData.map(({ label, textKey }, i) => (
+            <div
+              key={i}
+              className="flex items-start gap-4 max-w-[90%] text-base sm:text-lg"
+            >
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#3090FF] text-white text-sm font-bold flex items-center justify-center shadow-md select-none">
+                {label}
+              </div>
+              <p className="leading-relaxed">{t(textKey)}</p>
             </div>
-            <p className="leading-relaxed">{t(textKey)}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     );
   }
@@ -158,7 +161,9 @@ export default function Diagram() {
                 <div className="w-8 h-8 rounded-full bg-[#3090FF] text-white text-xs font-bold flex items-center justify-center shadow-md z-10 select-none">
                   {label}
                 </div>
-                <div className={`absolute text-white text-sm w-[200px] ${align}`}>
+                <div
+                  className={`absolute text-white text-sm w-[200px] ${align}`}
+                >
                   {t(textKey)}
                 </div>
               </div>

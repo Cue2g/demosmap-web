@@ -7,12 +7,11 @@ import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 
 function SelectorLang({ mobile = false }: { mobile?: boolean }) {
-  const t = useTranslations("Nav");
   const router = useRouter();
   const locale = useLocale();
 
-  const toggleLocale = () => {
-    const newLocale = locale === "es" ? "ca" : "es";
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const newLocale = e.target.value;
     document.cookie = `NEXT_LOCALE=${newLocale}; path=/`;
     router.refresh();
     window.location.reload();
@@ -20,12 +19,15 @@ function SelectorLang({ mobile = false }: { mobile?: boolean }) {
 
   return (
     <div className={`flex flex-col ${mobile ? "gap-4" : "flex-row gap-2"}`}>
-      <button
-        onClick={toggleLocale}
-        className="w-[97px] h-auto px-4 font-bold py-2 bg-transparent cursor-pointer border-blue-500 border rounded-[10px] text-blue-500"
+      <select
+        value={locale}
+        onChange={handleChange}
+        className="px-4 py-2 border border-blue-500 rounded-[10px] bg-transparent text-blue-500 font-bold cursor-pointer"
       >
-        {locale === "es" ? t("langCat") : t("langEsp")}
-      </button>
+        <option value="es">ESP</option>
+        <option value="ca">CAT</option>
+         <option value="en">ENG</option>
+      </select>
       <a
         className="w-[97px] h-auto px-4 py-2 bg-blue-500 text-white text-center font-bold rounded-[10px]"
         href="https://app.demosmap.com/"

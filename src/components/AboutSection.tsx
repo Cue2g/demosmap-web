@@ -50,10 +50,17 @@ export default function AboutSection() {
             ref={videoRef}
             controls
             className="mx-auto w-full max-w-xxl rounded shadow-lg"
-            muted // mutear para evitar bloqueo autoplay en navegadores
-            playsInline // para mejor comportamiento en móviles
+            muted 
+            playsInline 
           >
             <source src={`/${t("video")}.webm`} type="video/webm" />
+            <track
+              src="en.vtt"
+              kind="subtitles"
+              srcLang="en"
+              label="English"
+              default
+            />
           </video>
         </div>
       </div>

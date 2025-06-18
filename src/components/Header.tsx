@@ -18,22 +18,22 @@ export default function Header() {
       >
         <source src="/headerVideo.mp4" type="video/mp4" />
       </video>
-
-      {/* Contenido principal */}
       <div className="absolute inset-0 flex flex-col justify-center items-center space-y-8 px-4 text-center z-10">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white leading-tight">
           {t("title")} <br className="hidden sm:block" /> {t("title2")}
         </h2>
 
-        <a
+      
+      <div >
+          <a
           href="#contact"
-          className="px-6  font-bold py-3 w-full max-w-[216px] h-12 bg-blue-500 text-white rounded-[10px] flex items-center justify-center text-center overflow-hidden text-ellipsis whitespace-nowrap"
+          className=" font-bold w-full p-6 h-12 bg-blue-500 text-white rounded-[10px] flex items-center justify-center text-center overflow-hidden text-ellipsis whitespace-nowrap"
         >
-          {t("button")}
-        </a>
+          {t("button")} 
+        </a> 
+      </div>
       </div>
 
-      {/* Flecha inferior */}
       <div className="absolute bottom-0 left-0 right-0 z-40 flex justify-center items-center pb-10">
         <Image src="arrowF.svg" width={16} height={20} alt="arrowF.svg" />
       </div>
