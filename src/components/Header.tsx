@@ -19,19 +19,20 @@ export default function Header() {
         <source src="/headerVideo.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 flex flex-col justify-center items-center space-y-8 px-4 text-center z-10">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white leading-tight">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-tight">
           {t("title")} <br className="hidden sm:block" /> {t("title2")}
+          <br className="hidden sm:block" />
+          {t("title3")}
         </h2>
 
-      
-      <div >
+        <div>
           <a
-          href="#contact"
-          className=" font-bold w-full p-6 h-12 bg-blue-500 text-white rounded-[10px] flex items-center justify-center text-center overflow-hidden text-ellipsis whitespace-nowrap"
-        >
-          {t("button")} 
-        </a> 
-      </div>
+            href="#contact"
+            className=" font-bold w-full p-6 h-12 bg-blue-500 text-white rounded-[10px] flex items-center justify-center text-center overflow-hidden text-ellipsis whitespace-nowrap"
+          >
+            {t("button")}
+          </a>
+        </div>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 z-40 flex justify-center items-center pb-10">
