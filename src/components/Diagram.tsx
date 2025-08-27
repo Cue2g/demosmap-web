@@ -57,7 +57,7 @@ export default function Diagram() {
       setIsMobile(vw < 640);
       const s = vw < 640 ? 280 : vw < 768 ? 400 : vw < 1024 ? 500 : 600;
       setSize(s);
-      setRadius(s / 3.5);
+      setRadius(s / 3.4);
     };
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -73,7 +73,7 @@ export default function Diagram() {
           });
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
     if (containerRef.current) observer.observe(containerRef.current);
     return () => observer.disconnect();
