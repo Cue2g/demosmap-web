@@ -74,8 +74,9 @@
     "title": "A quién nos dirigimos",
     "publicInstitutions": {
       "title": "Instituciones públicas",
-      "item1": "Administraciones locales",
-      "item2": "Instituciones de opinión pública"
+      "item1": "Administraciones públicas",
+      "item2": "Gobiernos",
+      "item3": "Instituciones de opinión pública"
     },
     "privateSector": {
       "title": "Sector Privado",
@@ -83,9 +84,8 @@
       "item2": "Grupos de interés",
       "item3": "Empresas demoscópicas"
     }
- 
   },
-     "Thanks": {
+  "Thanks": {
     "title": "¡Gracias por contactarnos!",
     "message": "Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible. Agradecemos tu interés y la confianza depositada en nosotros.",
     "button": "Volver al inicio"

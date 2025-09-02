@@ -25,6 +25,7 @@ export default function TargetAudience() {
           <ul className="list-disc list-inside space-y-1 text-sm sm:text-base">
             <li>{t("publicInstitutions.item1")}</li>
             <li>{t("publicInstitutions.item2")}</li>
+            <li>{t("publicInstitutions.item3")}</li>
           </ul>
         </div>
 

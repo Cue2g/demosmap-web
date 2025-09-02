@@ -75,7 +75,8 @@
     "publicInstitutions": {
       "title": "Public Institutions",
       "item1": "Local administrations",
-      "item2": "Public opinion institutions"
+      "item2": "Government",
+      "item3": "Public opinion institutions"
     },
     "privateSector": {
       "title": "Private Sector",

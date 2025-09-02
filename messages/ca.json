@@ -74,8 +74,9 @@
     "title": "A qui ens <br /> adrecem",
     "publicInstitutions": {
       "title": "Institucions públiques",
-      "item1": "Administracions locals",
-      "item2": "Institucions d'opinió pública"
+      "item1": "Administracions públiques",
+      "item2": "Governs",
+      "item3": "Institucions d'opinió pública"
     },
     "privateSector": {
       "title": "Sector Privat",
@@ -85,8 +86,8 @@
     }
   },
   "Thanks": {
-      "title": "Gràcies per contactar amb nosaltres!",
-      "message": "Hem rebut el teu missatge i ens posarem en contacte amb tu al més aviat possible. Agraïm el teu interès i la confiança depositada en nosaltres.",
-      "button": "Tornar a l'inici"
-    }
+    "title": "Gràcies per contactar amb nosaltres!",
+    "message": "Hem rebut el teu missatge i ens posarem en contacte amb tu al més aviat possible. Agraïm el teu interès i la confiança depositada en nosaltres.",
+    "button": "Tornar a l'inici"
+  }
 }
