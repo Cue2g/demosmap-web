@@ -15,7 +15,8 @@
     "next-intl": "^4.1.0",
     "next-sanity": "^10.0.15",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

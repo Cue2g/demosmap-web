@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   images: {
     domains: ["cdn.sanity.io"],
   },
+  compiler: {
+    styledComponents: true,
+  },
 };
 
 const withNextIntl = createNextIntlPlugin();
