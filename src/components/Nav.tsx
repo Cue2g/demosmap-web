@@ -5,6 +5,13 @@ import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
+import logo from "../../public/demosmapLogo.svg";
+import workmark from "../../public/Wordmark.svg";
+
+interface NavProps {
+  sticky?: boolean;
+  bg?: boolean;
+}
 
 function SelectorLang({ mobile = false }: { mobile?: boolean }) {
   const router = useRouter();
@@ -26,7 +33,7 @@ function SelectorLang({ mobile = false }: { mobile?: boolean }) {
       >
         <option value="es">ESP</option>
         <option value="ca">CAT</option>
-         <option value="en">ENG</option>
+        <option value="en">ENG</option>
       </select>
       <a
         className="w-[97px] h-auto px-4 py-2 bg-blue-500 text-white text-center font-bold rounded-[10px]"
@@ -38,7 +45,7 @@ function SelectorLang({ mobile = false }: { mobile?: boolean }) {
   );
 }
 
-export default function Nav() {
+export default function Nav({ sticky = false, bg = false }: NavProps) {
   const t = useTranslations("Nav");
   const [open, setOpen] = useState(false);
   const router = useRouter();
@@ -57,12 +64,14 @@ export default function Nav() {
   };
 
   return (
-    <nav className="absolute z-50 flex justify-between items-center w-full px-6 md:px-16 py-6 bg-transparent">
+    <nav
+      className={`absolute ${sticky ? "relative" : "absolute"} ${bg ? "bg-blue-600" : "bg-transparent"} z-50 flex justify-between items-center w-full px-6 md:px-16 py-6 `}
+    >
       {/* Logo */}
       <Link href={"/"} id="logo" className="flex items-center space-x-2">
-        <Image width={48} height={51} src="demosmapLogo.svg" alt="Logo" />
+        <Image width={48} height={51} src={logo} alt="Logo" />
         <div className="hidden xl:block">
-          <Image width={145} height={24} src="Wordmark.svg" alt="Wordmark" />
+          <Image width={145} height={24} src={workmark} alt="Wordmark" />
         </div>
       </Link>
 
@@ -87,6 +96,10 @@ export default function Nav() {
           >
             {t("requestDemo")}
           </button>
+
+          {/*<Link className="cursor-pointer" href="/actualidad">
+            Actualidad
+          </Link>*/}
         </div>
         <SelectorLang />
       </div>
