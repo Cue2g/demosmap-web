@@ -25,7 +25,7 @@ export default async function PostPage({
     await params,
     options,
   );
-  const postImageUrl = post.image
+  const postImageUrl = post?.image
     ? urlFor(post.image)?.width(550).height(310).url()
     : null;
 
