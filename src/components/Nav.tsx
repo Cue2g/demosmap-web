@@ -65,7 +65,7 @@ export default function Nav({ sticky = false, bg = false }: NavProps) {
 
   return (
     <nav
-      className={`absolute ${sticky ? "relative" : "absolute"} ${bg ? "bg-blue-600" : "bg-transparent"} z-50 flex justify-between items-center w-full px-6 md:px-16 py-6 `}
+      className={`absolute ${sticky ? "relative" : "absolute"} ${bg ? " bg-[#0A0726]" : "bg-transparent"} z-50 flex justify-between items-center w-full px-6 md:px-16 py-6 `}
     >
       {/* Logo */}
       <Link href={"/"} id="logo" className="flex items-center space-x-2">

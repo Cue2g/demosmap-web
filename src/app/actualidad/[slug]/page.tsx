@@ -4,8 +4,9 @@ import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import { client } from "@/sanity/client";
 import Image from "next/image";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
-const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]`;
+const POST_QUERY = `*[_type == "template-1" && slug.current == $slug][0]`;
 
 const { projectId, dataset } = client.config();
 const urlFor = (source: SanityImageSource) =>
@@ -26,28 +27,34 @@ export default async function PostPage({
     options,
   );
   const postImageUrl = post?.image
-    ? urlFor(post.image)?.width(550).height(310).url()
+    ? urlFor(post.image)?.url() // quitamos width/height para usar responsive
     : null;
 
   return (
     <main>
       <Nav bg sticky />
-      <div className="container mx-auto min-h-screen max-w-3xl p-8 flex flex-col gap-4">
+      <div className="mx-auto min-h-screen p-8 flex flex-col gap-4">
         {postImageUrl && (
-          <Image
-            src={postImageUrl}
-            alt={post.title}
-            className="aspect-video rounded-xl"
-            width="550"
-            height="310"
-          />
+          <div className="relative w-full h-80 md:h-96 lg:h-[500px] rounded-xl overflow-hidden">
+            <Image
+              src={postImageUrl}
+              alt={"url"}
+              fill
+              className="object-cover object-center"
+              priority
+            />
+          </div>
         )}
-        <h1 className="text-4xl font-bold mb-8">{post.title}</h1>
+
+        <h1 className="text-4xl font-bold mb-8">{post?.title}</h1>
+
         <div className="prose">
-          <p>Published: {new Date(post.publishedAt).toLocaleDateString()}</p>
-          {Array.isArray(post.body) && <PortableText value={post.body} />}
+          {Array.isArray(post?.body) && <PortableText value={post.body} />}
         </div>
       </div>
+      
+      
+      <Footer />
     </main>
   );
 }
