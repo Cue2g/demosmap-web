@@ -2,14 +2,14 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import { useForm } from '@formspree/react';
+import { useForm } from "@formspree/react";
 
 export default function Contact() {
   const t = useTranslations("Contact");
 
-const [state, handleSubmit] = useForm("mblykgrj");
-   if (state.succeeded) {
-      window.location.href = "/email-send";
+  const [state, handleSubmit] = useForm("mblykgrj");
+  if (state.succeeded) {
+    window.location.href = "/email-send";
   }
 
   return (
@@ -85,11 +85,14 @@ const [state, handleSubmit] = useForm("mblykgrj");
           ))}
 
           <div className="flex justify-center">
-            <button type="submit" disabled={state.submitting} className="w-[120px] px-4 py-2 bg-blue-500 hover:bg-blue-600 transition-colors text-white text-center rounded-[10px] font-medium">
+            <button
+              type="submit"
+              disabled={state.submitting}
+              className="w-[120px] px-4 py-2 bg-blue-500 hover:bg-blue-600 transition-colors text-white text-center rounded-[10px] font-medium"
+            >
               {t("button")}
             </button>
           </div>
-
         </form>
       </div>
     </section>

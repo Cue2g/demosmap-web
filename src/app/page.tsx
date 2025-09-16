@@ -7,6 +7,7 @@ import TargetAudience from "@/components/TargetAudience";
 import Diagram from "@/components/Diagram";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import LatestNews from "@/components/LatestNews";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <TargetAudience />
       <Diagram />
       <Contact />
+      <LatestNews />
       <Footer />
     </div>
   );

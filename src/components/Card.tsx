@@ -14,22 +14,22 @@ export function Card({ post }: { post: SanityDocument }) {
     ? urlFor(post.image)?.width(550).height(310).url()
     : null;
   return (
-    <div className="group bg-white border border-gray-200 rounded-lg shadow-lg hover:bg-amber-100 overflow-hidden">
+    <div className="group bg-white border border-gray-200 rounded-lg  hover:bg-amber-100 overflow-hidden">
       <a
         href={`actualidad/${post.slug.current}`}
         className="block overflow-hidden rounded-t-lg"
       >
         {postImageUrl && (
-          <Image
-            src={postImageUrl}
-            alt={post.title}
-            className="aspect-video rounded-t-lg transform transition-transform duration-500 group-hover:scale-110"
-            layout="responsive"
-            height={350}
-            width={350}
-            quality={100}
-            priority
-          />
+          <div className="relative w-full aspect-video">
+            <Image
+              src={postImageUrl}
+              alt={post.title}
+              className="object-cover rounded-t-lg transform transition-transform duration-500 group-hover:scale-110"
+              fill
+              quality={100}
+              priority
+            />
+          </div>
         )}
       </a>
       <div className="p-5">

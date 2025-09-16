@@ -89,5 +89,8 @@
     "title": "Thank you for contacting us!",
     "message": "We have received your message and will get back to you as soon as possible. Thank you for your interest and the trust you have placed in us.",
     "button": "Back to home"
+  },
+  "LatestNews": {
+    "title": "Latest News"
   }
 }

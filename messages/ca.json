@@ -89,5 +89,8 @@
     "title": "Gràcies per contactar amb nosaltres!",
     "message": "Hem rebut el teu missatge i ens posarem en contacte amb tu al més aviat possible. Agraïm el teu interès i la confiança depositada en nosaltres.",
     "button": "Tornar a l'inici"
+  },
+  "LatestNews": {
+    "title": "Últimes notícies"
   }
 }

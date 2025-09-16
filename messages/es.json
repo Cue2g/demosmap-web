@@ -89,5 +89,8 @@
     "title": "¡Gracias por contactarnos!",
     "message": "Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible. Agradecemos tu interés y la confianza depositada en nosotros.",
     "button": "Volver al inicio"
+  },
+  "LatestNews": {
+    "title": "Últimas noticias"
   }
 }
