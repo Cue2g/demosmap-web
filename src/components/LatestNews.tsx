@@ -11,5 +11,8 @@ export default async function LatestNews() {
   ]|order(publishedAt desc)[0...3]{title, slug, publishedAt, ...}`;
   const options = { next: { revalidate: 30 } };
   const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
+
+  if (posts.length === 0) return null;
+
   return <LatestNewsClient posts={posts} />;
 }
