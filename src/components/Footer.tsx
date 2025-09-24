@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import financiado from "../../public/Financiado.svg"
+import logo from '../../public/Demosmap.svg'
 
 export default function Footer() {
   const t = useTranslations("Footer");
@@ -13,7 +15,7 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row w-full gap-12">
         {/* Left: logo + contact */}
         <div className="flex flex-col gap-6 flex-1">
-          <Image alt="Demosmap" width={223} height={35} src="Demosmap.svg" />
+          <Image alt="Demosmap" width={223} height={35} src={logo} />
           <div className="flex flex-col text-sm md:text-base">
             <span>+34 613 320 670</span>
             <span>info@demosmap.com</span>
@@ -63,7 +65,7 @@ export default function Footer() {
       {/* Bottom section */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-6">
         <Image
-          src="Financiado.svg"
+          src={financiado}
           alt="Financiado"
           width={200}
           height={80}
