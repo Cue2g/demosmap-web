@@ -14,7 +14,7 @@ export function Card({ post }: { post: SanityDocument }) {
     ? urlFor(post.image)?.width(550).height(310).url()
     : null;
   return (
-    <div className="group bg-white border border-gray-200 rounded-lg  hover:bg-amber-100 overflow-hidden">
+    <div className="group bg-white border border-gray-200 rounded-lg  hover:bg-amber-100 overflow-hidden h-full">
       <a
         href={`actualidad/${post.slug.current}`}
         className="block overflow-hidden rounded-t-lg"
