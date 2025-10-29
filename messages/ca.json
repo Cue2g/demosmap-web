@@ -92,5 +92,17 @@
   },
   "LatestNews": {
     "title": "Últimes notícies"
-  }
+  },
+  "SubscribeSection": {
+  "title": "Vols estar al dia de tota la nostra actualitat?",
+  "subtitle": "Subscriu-te i rep comunicacions de ",
+  "placeholder": "Introdueix el teu correu electrònic",
+  "button": {
+    "default": "Subscriure'm",
+    "loading": "Enviant..."
+  },
+  "success": "Gràcies per subscriure't!",
+  "error": "Hi ha hagut un problema. Comprova el teu correu i torna-ho a intentar.",
+  "exist": "Aquest correu ja està subscrit."
+}
 }

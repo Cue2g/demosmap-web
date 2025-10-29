@@ -8,20 +8,21 @@ import Diagram from "@/components/Diagram";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import LatestNews from "@/components/LatestNews";
-
+import SubscribeSection from "@/components/SubscribeSection";
 export default function Home() {
-  return (
-    <div className="relative min-h-screen">
-      <Nav />
-      <Header />
-      <AboutSection />
-      <Services />
-      <ImageSection />
-      <TargetAudience />
-      <Diagram />
-      <Contact />
-      <LatestNews />
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="relative min-h-screen">
+            <Nav />
+            <Header />
+            <AboutSection />
+            <Services />
+            <ImageSection />
+            <TargetAudience />
+            <Diagram />
+            <SubscribeSection />
+            <Contact />
+            <LatestNews />
+            <Footer />
+        </div>
+    );
 }
