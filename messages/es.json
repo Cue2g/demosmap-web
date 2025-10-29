@@ -92,5 +92,17 @@
   },
   "LatestNews": {
     "title": "Últimas noticias"
+  },
+  "SubscribeSection": {
+    "title": "¿Quieres estar al día de toda nuestra actualidad?",
+    "subtitle": "Suscríbete y recibe comunicaciones por parte de ",
+    "placeholder": "Ingresa tu correo electrónico",
+    "button": {
+      "default": "Suscribirme",
+      "loading": "Enviando..."
+    },
+    "success": "¡Gracias por suscribirte!",
+    "error": "Hubo un problema. Verifica tu correo e inténtalo nuevamente.",
+    "exist": "Este correo ya está suscrito."
   }
 }

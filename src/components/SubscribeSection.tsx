@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
-
+import { useTranslations } from "next-intl";
 export default function SubscribeSection() {
+
+    const t = useTranslations("SubscribeSection");
     const [email, setEmail] = useState("");
     const [loading, setLoading] = useState(false);
-    const [status, setStatus] = useState<"success" | "error" | null>(null);
+    const [status, setStatus] = useState<"success" | "error" | "exist"| null>(null);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -21,12 +23,13 @@ export default function SubscribeSection() {
                 body: JSON.stringify({ email }),
             });
 
-            if (res.ok) {
-                setStatus("success");
-                setEmail("");
-            } else {
-                setStatus("error");
-            }
+
+            if(res.status === 409) return setStatus("exist");
+            if(!res.ok) return setStatus("error");
+
+            setStatus("success");
+            setEmail("");
+
         } catch {
             setStatus("error");
         } finally {
@@ -36,25 +39,18 @@ export default function SubscribeSection() {
 
     return (
         <section className="relative w-full py-16 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
-            {/* Fondo decorativo sutil */}
             <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.2),transparent_60%)] pointer-events-none" />
-
             <div className="relative max-w-3xl mx-auto text-center px-6">
-                {/* Título */}
                 <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-3">
-                    ¿Quieres estar al día de toda nuestra actualidad?
+                   {t("title")}
                 </h3>
-
-                {/* Subtítulo */}
                 <p className="text-gray-600 mb-8 text-sm md:text-base leading-relaxed">
-                    Suscríbete y recibe comunicaciones por parte de{" "}
+                    {t("subtitle")}
                     <span className="font-semibold text-blue-600">
                         Demosmap
                     </span>
                     .
                 </p>
-
-                {/* Formulario */}
                 <form
                     onSubmit={handleSubmit}
                     className="flex flex-col sm:flex-row items-center justify-center gap-3"
@@ -63,29 +59,33 @@ export default function SubscribeSection() {
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        placeholder="Ingresa tu correo electrónico"
-                        className="w-full sm:w-96 px-5 py-3 rounded-full border border-gray-300 bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm transition-all disabled:opacity-50"
+                        placeholder={t("placeholder")}
+                        className="w-full sm:w-96 px-5 py-3 rounded-[10px] border border-gray-300 bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all disabled:opacity-50"
                         disabled={loading}
                     />
                     <button
                         type="submit"
                         disabled={loading}
-                        className="px-6 py-3 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 active:scale-[0.98] transition-all disabled:opacity-60"
+                        className="w-[120px] px-4 py-2 bg-blue-500 hover:bg-blue-600 transition-colors text-white text-center rounded-[10px] font-medium"
                     >
-                        {loading ? "Enviando..." : "Suscribirme"}
+                        {loading ? t("button.loading") : t("button.default")}
                     </button>
                 </form>
 
-                {/* Mensajes de estado */}
                 {status === "success" && (
                     <p className="text-green-600 mt-4 text-sm animate-fade-in">
-                        ¡Gracias por suscribirte! 🎉
+                        {t("success")}
                     </p>
                 )}
                 {status === "error" && (
                     <p className="text-red-600 mt-4 text-sm animate-fade-in">
-                        Hubo un problema. Verifica tu correo e inténtalo
-                        nuevamente.
+                      {t("error")}
+                    </p>
+                )}
+
+                {status === "exist" && (
+                    <p className="text-orange-600 mt-4 text-sm animate-fade-in">
+                      {t("exist")}
                     </p>
                 )}
             </div>
