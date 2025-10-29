@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",
+    "@neondatabase/serverless": "^1.0.2",
     "@sanity/image-url": "^1.2.0",
+    "@vercel/postgres": "^0.10.0",
     "next": "15.3.3",
     "next-intl": "^4.1.0",
     "next-sanity": "^10.0.15",
