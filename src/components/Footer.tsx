@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="flex flex-col gap-6 flex-1">
           <Image alt="Demosmap" width={223} height={35} src={logo} />
           <div className="flex flex-col text-sm md:text-base">
-            <span>+34 613 320 670</span>
+            <span>+34 613 79 84 08</span>
             <span>info@demosmap.com</span>
           </div>
         </div>
