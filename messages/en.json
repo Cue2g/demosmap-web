@@ -8,7 +8,7 @@
   "AboutSection": {
     "video": "videoES",
     "title": "What is Demosmap?",
-    "description": "Demosmap is a software platform that enables the creation of customized questionnaires with the ability to visualize opinions in a geolocated format and subsequently send mass communications via WhatsApp, segmented according to each subset of responses.",
+    "description": "Demosmap is a government intelligence platform that converts data into decisions and micro-segmented communication into trust. We help governments and institutions deeply understand the context and the citizenry they govern through the massive integration of information, data, and citizen opinion in real-time.",
     "button": "Watch explanatory video"
   },
   "Contact": {
@@ -28,12 +28,26 @@
   },
   "Diagram": {
     "title": "How it Works",
-    "step1": "The client wants to know public opinion on a specific issue.",
-    "step2": "They create a micro-questionnaire.",
-    "step3": "Using a personalized link, they send it to their target audiences.",
-    "step4": "Citizens share their opinions.",
-    "step5": "The client can analyze the results in real time.",
-    "step6": "They generate segmented WhatsApp campaigns targeted to each audience of interest."
+    "step1": {
+      "title": "Understand",
+      "description": "The real context of the territorial area of action, combining data with citizen perception."
+    },
+    "step2": {
+      "title": "Measure",
+      "description": "In real-time the evaluation of the maximum authority, management, and public policies."
+    },
+    "step3": {
+      "title": "Detect",
+      "description": "Demands, risks, and opportunities before they turn into a crisis."
+    },
+    "step4": {
+      "title": "Optimize",
+      "description": "Investments and public policies based on evidence, not intuitions."
+    },
+    "step5": {
+      "title": "Strengthen",
+      "description": "Trust and legitimacy, establishing a direct and micro-segmented channel with citizens based on their perceptions and needs."
+    }
   },
   "Footer": {
     "faqs": "FAQS",
@@ -57,33 +71,30 @@
     "langCat": "CAT"
   },
   "Services": {
+    "mainTitle": "Demosmap transforms information into intelligent management capability",
     "service1": {
-      "title": "Geolocate the results through heat maps",
-      "description": "Visualize the results clearly and accurately using geolocated heat maps that allow you to analyze data distribution."
+      "title": "Total Source Integration",
+      "description": "Open data, electoral history, public data, external data, and proprietary public opinion."
     },
     "service2": {
-      "title": "Scientifically guaranteed representativeness",
-      "description": "Demosmap ensures the representativeness and reliability of the results by applying rigorous statistical criteria that guarantee the survey is both representative and trustworthy."
+      "title": "Continuous Citizen Perception",
+      "description": "Through strategic surveys and automated multi-channel micro-surveys."
     },
     "service3": {
-      "title": "Use of WhatsApp for micro-segmented messaging",
-      "description": "Connect directly with your audience. We give you the ability to segment your target audience for subsequent communication via WhatsApp."
+      "title": "Advanced Micro-segmentation",
+      "description": "Enabling understanding and communication to specific audiences based on territory, profile, and needs."
+    },
+    "service4": {
+      "title": "Action Capability",
+      "description": "Closing the loop between analysis and direct communication (WhatsApp and Push Notifications)."
+    },
+    "service5": {
+      "title": "GovTech Focus",
+      "description": "Specifically designed for the logic, timing, and challenges of public management in the 21st century."
     }
   },
   "TargetAudience": {
-    "title": "Who we work with",
-    "publicInstitutions": {
-      "title": "Public Institutions",
-      "item1": "Local administrations",
-      "item2": "Government",
-      "item3": "Public opinion institutions"
-    },
-    "privateSector": {
-      "title": "Private Sector",
-      "item1": "Service sector companies",
-      "item2": "Interest groups",
-      "item3": "Polling and research firms"
-    }
+    "impactStatement": "Governing well today requires understanding better, deciding with evidence, and communicating with precision"
   },
   "Thanks": {
     "title": "Thank you for contacting us!",
@@ -94,15 +105,15 @@
     "title": "Latest News"
   },
   "SubscribeSection": {
-  "title": "Do you want to stay up to date with all our news?",
-  "subtitle": "Subscribe and receive updates from ",
-  "placeholder": "Enter your email address",
-  "button": {
-    "default": "Subscribe",
-    "loading": "Sending..."
-  },
-  "success": "Thank you for subscribing!",
-  "error": "There was a problem. Please check your email and try again.",
-  "exist": "This email is already subscribed."
-}
+    "title": "Do you want to stay up to date with all our news?",
+    "subtitle": "Subscribe and receive updates from ",
+    "placeholder": "Enter your email address",
+    "button": {
+      "default": "Subscribe",
+      "loading": "Sending..."
+    },
+    "success": "Thank you for subscribing!",
+    "error": "There was a problem. Please check your email and try again.",
+    "exist": "This email is already subscribed."
+  }
 }

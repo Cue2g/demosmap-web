@@ -8,37 +8,31 @@ const stepsData = [
     label: "01",
     textKey: "step1",
     angle: -90,
-    align: "top-[-90px] left-1/2 -translate-x-1/2 text-center",
+    align: "top-[-120px] left-1/2 -translate-x-1/2 text-center",
   },
   {
     label: "02",
     textKey: "step2",
-    angle: -30,
-    align: "top-[-20px] left-[120%]",
+    angle: -18,
+    align: "top-[-40px] left-[130%]",
   },
   {
     label: "03",
     textKey: "step3",
-    angle: 30,
-    align: "bottom-[-20px] left-[120%]",
+    angle: 54,
+    align: "bottom-[-40px] left-[130%]",
   },
   {
     label: "04",
     textKey: "step4",
-    angle: 90,
-    align: "top-[115%] left-1/2 -translate-x-1/2 text-center",
+    angle: 126,
+    align: "bottom-[-40px] right-[130%] text-right",
   },
   {
     label: "05",
     textKey: "step5",
-    angle: 150,
-    align: "bottom-[-20px] right-[120%] text-right",
-  },
-  {
-    label: "06",
-    textKey: "step6",
-    angle: 210,
-    align: "top-[-20px] right-[120%] text-right",
+    angle: 198,
+    align: "top-[-40px] right-[130%] text-right",
   },
 ];
 
@@ -83,22 +77,25 @@ export default function Diagram() {
 
   if (isMobile) {
     return (
-      <div className="w-full min-h-screen bg-[#0A0B37] text-white flex flex-col items-center justify-start gap-6 py-8 px-6">
-        <div className="text-center font-semibold max-w-[90%] mx-auto">
-          <p className="text-xl sm:text-2xl">{t("title")}</p>
+      <div className="w-full min-h-screen bg-[#0A0B37] text-white flex flex-col items-center justify-start gap-10 py-16 px-6">
+        <div className="text-center font-semibold max-w-[90%] mx-auto mb-4">
+          <p className="text-2xl sm:text-3xl">{t("title")}</p>
           <div className="w-16 h-[3px] bg-blue-400 mx-auto my-3 rounded" />
         </div>
 
-        <div className="gap-5 flex flex-col">
+        <div className="gap-8 flex flex-col">
           {stepsData.map(({ label, textKey }, i) => (
             <div
               key={i}
-              className="flex items-start gap-4 max-w-[90%] text-base sm:text-lg"
+              className="flex items-start gap-5 max-w-[95%] text-base sm:text-lg"
             >
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#3090FF] text-white text-sm font-bold flex items-center justify-center shadow-md select-none">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#3090FF] text-white text-md font-bold flex items-center justify-center shadow-md select-none mt-1">
                 {label}
               </div>
-              <p className="leading-relaxed">{t(textKey)}</p>
+              <div className="space-y-1">
+                <p className="font-bold text-blue-400">{t(`${textKey}.title`)}</p>
+                <p className="leading-relaxed text-sm opacity-90">{t(`${textKey}.description`)}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -110,18 +107,17 @@ export default function Diagram() {
     <div
       ref={containerRef}
       id="diagram"
-      className="relative w-full min-h-screen flex items-center justify-center bg-[#0A0B37] overflow-hidden px-4"
+      className="relative w-full min-h-[120vh] flex items-center justify-center bg-[#0A0B37] overflow-hidden px-4"
     >
       <div
-        className="relative mx-auto"
+        className="relative mx-auto mt-20"
         style={{ width: size, height: size, maxWidth: "100%" }}
       >
         {waveSizes.map((circleSize, i) => (
           <div
             key={i}
-            className={`absolute rounded-full border z-0 ${
-              i > 0 ? "border-[#1D1E60]" : "border-[#3A80EB]"
-            }`}
+            className={`absolute rounded-full border z-0 ${i > 0 ? "border-[#1D1E60]" : "border-[#3A80EB]"
+              }`}
             style={{
               width: `${circleSize}px`,
               height: `${circleSize}px`,
@@ -133,7 +129,7 @@ export default function Diagram() {
         ))}
 
         <div className="absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 text-white text-center font-semibold">
-          <p className="text-lg border-b border-blue-400">{t("title")}</p>
+          <p className="text-xl sm:text-2xl border-b-2 border-blue-400 pb-1">{t("title")}</p>
         </div>
 
         {stepsData.map(({ label, textKey, angle, align }, i) => {
@@ -145,11 +141,10 @@ export default function Diagram() {
           return (
             <div
               key={i}
-              className={`absolute z-10 transition-all duration-500 ${
-                isVisible
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-4"
-              }`}
+              className={`absolute z-10 transition-all duration-500 ${isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-4"
+                }`}
               style={{
                 left: `calc(50% + ${x}px)`,
                 top: `calc(50% + ${y}px)`,
@@ -158,13 +153,18 @@ export default function Diagram() {
               }}
             >
               <div className="relative flex items-center justify-center">
-                <div className="w-8 h-8 rounded-full bg-[#3090FF] text-white text-xs font-bold flex items-center justify-center shadow-md z-10 select-none">
+                <div className="w-10 h-10 rounded-full bg-[#3090FF] text-white text-sm font-bold flex items-center justify-center shadow-md z-10 select-none">
                   {label}
                 </div>
                 <div
-                  className={`absolute text-white text-sm w-[200px] ${align}`}
+                  className={`absolute text-white w-[250px] space-y-1 ${align}`}
                 >
-                  {t(textKey)}
+                  <p className="text-sm font-bold text-blue-400 uppercase tracking-wider">
+                    {t(`${textKey}.title`)}
+                  </p>
+                  <p className="text-xs leading-relaxed opacity-80">
+                    {t(`${textKey}.description`)}
+                  </p>
                 </div>
               </div>
             </div>

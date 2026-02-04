@@ -8,7 +8,7 @@
   "AboutSection": {
     "video": "videoES",
     "title": "¿Qué es Demosmap?",
-    "description": "Demosmap es un software que permite realizar cuestionarios personalizados con capacidad de visualizar opiniones de un modo geolocalizado y el posterior envío de comunicaciones masivas por WhatsApp segmentando en función a cada subconjunto de respuestas.",
+    "description": "Demosmap es una plataforma de inteligencia gubernamental que convierte datos en decisiones y comunicación microsegmentada en confianza. Ayudamos a gobiernos e instituciones a comprender en profundidad el contexto y a la ciudadanía a la que gobiernan, mediante la integración masiva de información, datos y opinión ciudadana en tiempo real.",
     "button": "Ver video explicativo"
   },
   "Contact": {
@@ -28,12 +28,26 @@
   },
   "Diagram": {
     "title": "Cómo funciona",
-    "step1": "El Cliente quiere conocer la opinión ciudadana sobre un asunto.",
-    "step2": "Elabora un microcuestionario",
-    "step3": "Mediante un enlace personalizado, lo envía a sus públicos objetivos",
-    "step4": "La ciudadanía comparte su opinión.",
-    "step5": "El cliente puede analizar resultados en tiempo real.",
-    "step6": "Generar campañas segmentadas por WhatsApp dirigidas a cada público de interés."
+    "step1": {
+      "title": "Comprender",
+      "description": "El contexto real del área territorial de actuación, combinando datos con la percepción ciudadana."
+    },
+    "step2": {
+      "title": "Medir",
+      "description": "En tiempo real la valoración de la máxima autoridad, gestión y políticas públicas."
+    },
+    "step3": {
+      "title": "Detectar",
+      "description": "Demandas, riesgos y oportunidades antes de que se conviertan en crisis."
+    },
+    "step4": {
+      "title": "Optimizar",
+      "description": "Inversiones y políticas públicas basándose en evidencia, no intuiciones."
+    },
+    "step5": {
+      "title": "Fortalecer",
+      "description": "La confianza y la legitimidad, estableciendo un canal directo y microsegmentado con la ciudadanía en función de cuáles sean sus percepciones y necesidades."
+    }
   },
   "Footer": {
     "faqs": "FAQS",
@@ -57,33 +71,30 @@
     "langCat": "CAT"
   },
   "Services": {
+    "mainTitle": "Demosmap transforma la información en capacidad de gestión inteligente",
     "service1": {
-      "title": "Geolocaliza los resultados a través de mapas de calor",
-      "description": "Visualiza los resultados de manera clara y precisa, utilizando mapas de calor geolocalizados que te permiten analizar la distribución de datos."
+      "title": "Integración total de fuentes",
+      "description": "Datos abiertos, históricos electorales, datos públicos, datos externos y opinión pública propia."
     },
     "service2": {
-      "title": "Grado de representatividad científica garantizado",
-      "description": "Demosmap asegura la representatividad y fiabilidad de los resultados aplicando rigurosos criterios estadísticos que garantizan que la encuesta sea representativa y fiable."
+      "title": "Percepción ciudadana continua",
+      "description": "Mediante encuestas estratégicas y microencuestas multicanal."
     },
     "service3": {
-      "title": "Uso de WhatsApp para envíos micro segmentados",
-      "description": "Conecta directamente con tu público. Te damos la posibilidad de segmentar tu audiencia de interés para el posterior envío de comunicaciones vía WhatsApp."
+      "title": "Microsegmentación avanzada",
+      "description": "Que permite entender y comunicar a públicos específicos según territorio, perfil y necesidades."
+    },
+    "service4": {
+      "title": "Capacidad de acción",
+      "description": "Cerrando el ciclo entre análisis y comunicación directa (WhatsApp y Notificaciones Push)."
+    },
+    "service5": {
+      "title": "Enfoque GovTech",
+      "description": "Pensado específicamente para la lógica, tiempos y desafíos de la dirección pública en el siglo XXI."
     }
   },
   "TargetAudience": {
-    "title": "A quién nos dirigimos",
-    "publicInstitutions": {
-      "title": "Instituciones públicas",
-      "item1": "Administraciones públicas",
-      "item2": "Gobiernos",
-      "item3": "Instituciones de opinión pública"
-    },
-    "privateSector": {
-      "title": "Sector Privado",
-      "item1": "Empresas del sector servicios",
-      "item2": "Grupos de interés",
-      "item3": "Empresas demoscópicas"
-    }
+    "impactStatement": "Gobernar bien hoy exige comprender mejor, decidir con evidencia y comunicar con precisión"
   },
   "Thanks": {
     "title": "¡Gracias por contactarnos!",
