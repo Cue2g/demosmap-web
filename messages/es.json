@@ -27,7 +27,7 @@
     "button": "Solicitar"
   },
   "Diagram": {
-    "title": "Cómo funciona",
+    "title": "¿Cómo me ayuda?",
     "step1": {
       "title": "Comprender",
       "description": "El contexto real del área territorial de actuación, combinando datos con la percepción ciudadana."
@@ -46,7 +46,7 @@
     },
     "step5": {
       "title": "Fortalecer",
-      "description": "La confianza y la legitimidad, estableciendo un canal directo y microsegmentado con la ciudadanía en función de cuáles sean sus percepciones y necesidades."
+      "description": "La confianza y la legitimidad, estableciendo un canal directo y microsegmentado de comunicación con la ciudadanía en función a percepciones y necesidades."
     }
   },
   "Footer": {
@@ -74,19 +74,19 @@
     "mainTitle": "Demosmap transforma la información en capacidad de gestión inteligente",
     "service1": {
       "title": "Integración total de fuentes",
-      "description": "Datos abiertos, históricos electorales, datos públicos, datos externos y opinión pública propia."
+      "description": "Open Data, datos propios, datos externos y opinión pública."
     },
     "service2": {
       "title": "Percepción ciudadana continua",
-      "description": "Mediante encuestas estratégicas y microencuestas multicanal."
+      "description": "Mediante encuestas estratégicas y microencuestas multicanal visualizables en tiempo real."
     },
     "service3": {
       "title": "Microsegmentación avanzada",
-      "description": "Que permite entender y comunicar a públicos específicos según territorio, perfil y necesidades."
+      "description": "Que permite entender y comunicar de un modo directo a públicos específicos según su perfil, necesidades y área territorial."
     },
     "service4": {
       "title": "Capacidad de acción",
-      "description": "Cerrando el ciclo entre análisis y comunicación directa (WhatsApp y Notificaciones Push)."
+      "description": "Completa el ciclo entre análisis y comunicación directa (WhatsApp y Notificaciones Push)."
     },
     "service5": {
       "title": "Enfoque GovTech",

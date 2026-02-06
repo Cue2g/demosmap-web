@@ -27,7 +27,7 @@
     "button": "Submit"
   },
   "Diagram": {
-    "title": "How it Works",
+    "title": "How does it help me?",
     "step1": {
       "title": "Understand",
       "description": "The real context of the territorial area of action, combining data with citizen perception."
@@ -46,7 +46,7 @@
     },
     "step5": {
       "title": "Strengthen",
-      "description": "Trust and legitimacy, establishing a direct and micro-segmented channel with citizens based on their perceptions and needs."
+      "description": "Trust and legitimacy, establishing a direct and micro-segmented communication channel with citizens based on perceptions and needs."
     }
   },
   "Footer": {
@@ -74,19 +74,19 @@
     "mainTitle": "Demosmap transforms information into intelligent management capability",
     "service1": {
       "title": "Total Source Integration",
-      "description": "Open data, electoral history, public data, external data, and proprietary public opinion."
+      "description": "Open Data, own data, external data and public opinion."
     },
     "service2": {
       "title": "Continuous Citizen Perception",
-      "description": "Through strategic surveys and automated multi-channel micro-surveys."
+      "description": "Through strategic surveys and multi-channel micro-surveys viewable in real-time."
     },
     "service3": {
       "title": "Advanced Micro-segmentation",
-      "description": "Enabling understanding and communication to specific audiences based on territory, profile, and needs."
+      "description": "Enabling understanding and direct communication to specific audiences based on their profile, needs, and territorial area."
     },
     "service4": {
       "title": "Action Capability",
-      "description": "Closing the loop between analysis and direct communication (WhatsApp and Push Notifications)."
+      "description": "Completes the loop between analysis and direct communication (WhatsApp and Push Notifications)."
     },
     "service5": {
       "title": "GovTech Focus",

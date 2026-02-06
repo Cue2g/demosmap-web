@@ -27,7 +27,7 @@
     "button": "Solicitar"
   },
   "Diagram": {
-    "title": "Com funciona",
+    "title": "Com m'ajuda?",
     "step1": {
       "title": "Comprendre",
       "description": "El context real de l'àrea territorial d'actuació, combinant dades amb la percepció ciutadana."
@@ -46,7 +46,7 @@
     },
     "step5": {
       "title": "Enfortir",
-      "description": "La confiança i la legitimitat, establint un canal directe i microsegmentat amb la ciutadania en funció a quines siguin les seves percepcions i necessitats."
+      "description": "La confiança i la legitimitat, establint un canal directe i microsegmentat de comunicació amb la ciutadania en funció a percepcions i necessitats."
     }
   },
   "Footer": {
@@ -74,19 +74,19 @@
     "mainTitle": "Demosmap transforma la informació amb capacitat de gestió intel·ligent",
     "service1": {
       "title": "Integració total de fonts",
-      "description": "Dades obertes, històrics electorals, dades públiques, dades externes i opinió pública pròpia."
+      "description": "Open Data, dades pròpies, dades externes i opinió pública."
     },
     "service2": {
       "title": "Percepció ciutadana continua",
-      "description": "Mitjançant enquestes estratègiques i microenquestes multicanal."
+      "description": "Mitjançant enquestes estratègiques i microenquestes multicanal visualitzables en temps real."
     },
     "service3": {
       "title": "Microsegmentació avançada",
-      "description": "Que permet entendre i comunicar a públics específics segons territori, perfil i necessitats."
+      "description": "Que permet entendre i comunicar d'un mode directe a públics específics segons el seu perfil, necessitats i àrea territorial."
     },
     "service4": {
       "title": "Capacitat d’acció",
-      "description": "Tancant el cicle entre anàlisi i comunicació directa (WhatsApp i Notificacions Push)."
+      "description": "Completa el cicle entre anàlisi i comunicació directa (WhatsApp i Notificacions Push)."
     },
     "service5": {
       "title": "Enfocament GovTech",
