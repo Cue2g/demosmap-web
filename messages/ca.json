@@ -8,7 +8,7 @@
   "AboutSection": {
     "video": "videoCA",
     "title": "Què és Demosmap?",
-    "description": "Demosmap és un programari que permet fer qüestionaris personalitzats amb la capacitat de visualitzar opinions d'una manera geolocalitzada i l'enviament posterior de comunicacions massives per WhatsApp segmentant segons cada subconjunt de respostes.",
+    "description": "Demosmap és una plataforma d’intel·ligència governamental que converteix dades en decisions i comunicació microsegmentada en confiança. Ajudem a governs i institucions a comprendre en profunditat el context i la ciutadania a la qual governen, amb la integració massiva d’informació, dades i opinió ciutadana en temps real.",
     "button": "Veure vídeo explicatiu"
   },
   "Contact": {
@@ -27,13 +27,27 @@
     "button": "Solicitar"
   },
   "Diagram": {
-    "title": "Com funciona",
-    "step1": "El Client vol saber l’opinió ciutadana sobre un assumpte.",
-    "step2": "Elabora un microqüestionari",
-    "step3": "Mitjançant un enllaç personalitzat, el fa arribar als seus públics objectius",
-    "step4": "La ciutadania comparteix la seva opinió.",
-    "step5": "El client pot analitzar resultats en temps real.",
-    "step6": "Generar campanyes segmentades per WhatsApp adreçades a cada públic d’interès."
+    "title": "Com m'ajuda?",
+    "step1": {
+      "title": "Comprendre",
+      "description": "El context real de l'àrea territorial d'actuació, combinant dades amb la percepció ciutadana."
+    },
+    "step2": {
+      "title": "Mesurar",
+      "description": "En temps real la valoració de la màxima autoritat, gestió i polítiques públiques."
+    },
+    "step3": {
+      "title": "Detectar",
+      "description": "Demandes, riscos i oportunitats abans que es converteixin en crisi."
+    },
+    "step4": {
+      "title": "Optimitzar",
+      "description": "Inversions i polítiques públiques basant-se en evidència, no intuïcions."
+    },
+    "step5": {
+      "title": "Enfortir",
+      "description": "La confiança i la legitimitat, establint un canal directe i microsegmentat de comunicació amb la ciutadania en funció a percepcions i necessitats."
+    }
   },
   "Footer": {
     "faqs": "FAQS",
@@ -57,33 +71,30 @@
     "requestDemo": "Sol·licita més informació"
   },
   "Services": {
+    "mainTitle": "Demosmap transforma la informació amb capacitat de gestió intel·ligent",
     "service1": {
-      "title": "Geolocalitza els resultats a través de mapes de calor",
-      "description": "Visualitza els resultats de manera clara i precisa, utilitzant mapes de calor geolocalitzats que et permeten analitzar la distribució de dades."
+      "title": "Integració total de fonts",
+      "description": "Open Data, dades pròpies, dades externes i opinió pública."
     },
     "service2": {
-      "title": "Grau de representativitat científica garantida",
-      "description": "Demosmap assegura la representativitat i fiabilitat dels resultats aplicant rigorosos criteris estadístics que garanteixen que l’enquesta sigui representativa i fiable."
+      "title": "Percepció ciutadana continua",
+      "description": "Mitjançant enquestes estratègiques i microenquestes multicanal visualitzables en temps real."
     },
     "service3": {
-      "title": "Ús de WhatsApp per enviaments microsegmentats",
-      "description": "Connecta directament amb el teu públic. T’oferim la possibilitat de segmentar la teva audiència d’interès per al posterior enviament de comunicacions via WhatsApp."
+      "title": "Microsegmentació avançada",
+      "description": "Que permet entendre i comunicar d'un mode directe a públics específics segons el seu perfil, necessitats i àrea territorial."
+    },
+    "service4": {
+      "title": "Capacitat d’acció",
+      "description": "Completa el cicle entre anàlisi i comunicació directa (WhatsApp i Notificacions Push)."
+    },
+    "service5": {
+      "title": "Enfocament GovTech",
+      "description": "Pensat específicament per a la lògica, temps i desafiaments de la direcció pública en el segle XXI."
     }
   },
   "TargetAudience": {
-    "title": "A qui ens <br /> adrecem",
-    "publicInstitutions": {
-      "title": "Institucions públiques",
-      "item1": "Administracions públiques",
-      "item2": "Governs",
-      "item3": "Institucions d'opinió pública"
-    },
-    "privateSector": {
-      "title": "Sector Privat",
-      "item1": "Empreses del sector serveis",
-      "item2": "Grups d'interès",
-      "item3": "Empreses demoscòpiques"
-    }
+    "impactStatement": "Governar bé avui exigeix comprendre millor, decidir amb evidència i comunicar amb precisió"
   },
   "Thanks": {
     "title": "Gràcies per contactar amb nosaltres!",
@@ -94,15 +105,15 @@
     "title": "Últimes notícies"
   },
   "SubscribeSection": {
-  "title": "Vols estar al dia de tota la nostra actualitat?",
-  "subtitle": "Subscriu-te i rep comunicacions de ",
-  "placeholder": "Introdueix el teu correu electrònic",
-  "button": {
-    "default": "Subscriure'm",
-    "loading": "Enviant..."
-  },
-  "success": "Gràcies per subscriure't!",
-  "error": "Hi ha hagut un problema. Comprova el teu correu i torna-ho a intentar.",
-  "exist": "Aquest correu ja està subscrit."
-}
+    "title": "Vols estar al dia de tota la nostra actualitat?",
+    "subtitle": "Subscriu-te i rep comunicacions de ",
+    "placeholder": "Introdueix el teu correu electrònic",
+    "button": {
+      "default": "Subscriure'm",
+      "loading": "Enviant..."
+    },
+    "success": "Gràcies per subscriure't!",
+    "error": "Hi ha hagut un problema. Comprova el teu correu i torna-ho a intentar.",
+    "exist": "Aquest correu ja està subscrit."
+  }
 }
