@@ -13,7 +13,6 @@ export default function Footer() {
     <footer className="py-16 px-6 md:px-12 lg:px-24 flex flex-col items-stretch bg-[#0A0726] text-white">
       {/* Top section */}
       <div className="flex flex-col md:flex-row w-full gap-12">
-        {/* Left: logo + contact */}
         <div className="flex flex-col gap-6 flex-1">
           <Image alt="Demosmap" width={223} height={35} src={logo} />
           <div className="flex flex-col text-sm md:text-base">
