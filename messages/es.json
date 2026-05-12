@@ -1,14 +1,14 @@
 {
   "Header": {
-    "title": "Comprende",
-    "title2": "Gobierna",
-    "title3": "Transforma",
+    "title": "Inteligencia de Datos",
+    "title2": "",
+    "title3": "",
     "button": "Solicita más información"
   },
   "AboutSection": {
     "video": "videoES",
     "title": "¿Qué es Demosmap?",
-    "description": "Demosmap es una plataforma de inteligencia gubernamental que convierte datos en decisiones y comunicación microsegmentada en confianza. Ayudamos a gobiernos e instituciones a comprender en profundidad el contexto y a la ciudadanía a la que gobiernan, mediante la integración masiva de información, datos y opinión ciudadana en tiempo real.",
+    "description": "Demosmap es una plataforma de inteligencia que convierte datos en decisiones y la microsegmentación en impacto directo en los usuarios clave. Ayudamos a instituciones y empresas a comprender en profundidad el contexto y la ciudadanía a la que se dirigen, mediante la integración masiva de información, datos y opinión en tiempo real.",
     "button": "Ver video explicativo"
   },
   "Contact": {
@@ -30,19 +30,19 @@
     "title": "¿Cómo me ayuda?",
     "step1": {
       "title": "Comprender",
-      "description": "El contexto real del área territorial de actuación, combinando datos con la percepción ciudadana."
+      "description": "El contexto real del área de influencia e interés, mediante la combinación de datos propios, externos y percepción ciudadana."
     },
     "step2": {
       "title": "Medir",
-      "description": "En tiempo real la valoración de la máxima autoridad, gestión y políticas públicas."
+      "description": "En tiempo real. Valoración, posicionamiento y espacios de riesgo y oportunidad."
     },
     "step3": {
       "title": "Detectar",
-      "description": "Demandas, riesgos y oportunidades antes de que se conviertan en crisis."
+      "description": "Demandas latentes, riesgos reputacionales y oportunidades de crecimiento antes de que sea demasiado tarde."
     },
     "step4": {
       "title": "Optimizar",
-      "description": "Inversiones y políticas públicas basándose en evidencia, no intuiciones."
+      "description": "Toda actuación y decisión estratégica, basándose en evidencia, basándose en datos."
     },
     "step5": {
       "title": "Fortalecer",
@@ -71,30 +71,26 @@
     "langCat": "CAT"
   },
   "Services": {
-    "mainTitle": "Demosmap transforma la información en capacidad de gestión inteligente",
+    "mainTitle": "Demosmap transforma la información en capacidad de gestión inteligente.",
     "service1": {
-      "title": "Integración total de fuentes",
+      "title": "Integración total de fuentes:",
       "description": "Open Data, datos propios, datos externos y opinión pública."
     },
     "service2": {
-      "title": "Percepción ciudadana continua",
-      "description": "Mediante encuestas estratégicas y microencuestas multicanal visualizables en tiempo real."
+      "title": "Percepción ciudadana contínua:",
+      "description": "Mediante microencuestas multicanal visualizables en tiempo real."
     },
     "service3": {
-      "title": "Microsegmentación avanzada",
-      "description": "Que permite entender y comunicar de un modo directo a públicos específicos según su perfil, necesidades y área territorial."
+      "title": "Microsegmentación avanzada:",
+      "description": "Permite entender y comunicar de un modo directo a públicos específicos según su perfil, intereses y necesidades y área territorial."
     },
     "service4": {
-      "title": "Capacidad de acción",
-      "description": "Completa el ciclo entre análisis y comunicación directa (WhatsApp y Notificaciones Push)."
-    },
-    "service5": {
-      "title": "Enfoque GovTech",
-      "description": "Pensado específicamente para la lógica, tiempos y desafíos de la dirección pública en el siglo XXI."
+      "title": "Capacidad de acción:",
+      "description": "Completa el ciclo entre análisis y comunicación directa mediante Notificaciones Push o envíos por WhatsApp."
     }
   },
   "TargetAudience": {
-    "impactStatement": "Gobernar bien hoy exige comprender mejor, decidir con evidencia y comunicar con precisión"
+    "impactStatement": "Liderar hoy exige comprender mejor, decidir con evidencia y comunicar con precisión"
   },
   "Thanks": {
     "title": "¡Gracias por contactarnos!",

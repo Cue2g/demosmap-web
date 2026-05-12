@@ -23,12 +23,16 @@ export default function Header() {
           <span className="text-4xl sm:text-5xl lg:text-6xl block font-">
             {t("title")}
           </span>
-          <span className="text-4xl sm:text-5xl lg:text-6xl block italic">
-            {t("title2")}
-          </span>
-          <span className="text-4xl sm:text-5xl lg:text-6xl block">
-            {t("title3")}
-          </span>
+          {t("title2") && (
+            <span className="text-4xl sm:text-5xl lg:text-6xl block italic">
+              {t("title2")}
+            </span>
+          )}
+          {t("title3") && (
+            <span className="text-4xl sm:text-5xl lg:text-6xl block">
+              {t("title3")}
+            </span>
+          )}
         </h2>
 
         <div>

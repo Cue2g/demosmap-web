@@ -1,14 +1,14 @@
 {
   "Header": {
-    "title": "Comprèn",
-    "title2": "Governa",
-    "title3": "Transforma",
+    "title": "Intel·ligència de Dades",
+    "title2": "",
+    "title3": "",
     "button": "Sol·licita més informació"
   },
   "AboutSection": {
     "video": "videoCA",
     "title": "Què és Demosmap?",
-    "description": "Demosmap és una plataforma d’intel·ligència governamental que converteix dades en decisions i comunicació microsegmentada en confiança. Ajudem a governs i institucions a comprendre en profunditat el context i la ciutadania a la qual governen, amb la integració massiva d’informació, dades i opinió ciutadana en temps real.",
+    "description": "Demosmap és una plataforma d’intel·ligència que converteix dades en decisions i la microsegmentació en impacte directe en els usuaris clau. Ajudem a institucions i empreses a comprendre en profunditat el context i la ciutadania a la qual es dirigeixen, mitjançant la integració massiva d’informació, dades i opinió en temps real.",
     "button": "Veure vídeo explicatiu"
   },
   "Contact": {
@@ -30,19 +30,19 @@
     "title": "Com m'ajuda?",
     "step1": {
       "title": "Comprendre",
-      "description": "El context real de l'àrea territorial d'actuació, combinant dades amb la percepció ciutadana."
+      "description": "El context real de l’àrea d’influència i interès, mitjançant la combinació de dades pròpies, externes i percepció ciutadana."
     },
     "step2": {
       "title": "Mesurar",
-      "description": "En temps real la valoració de la màxima autoritat, gestió i polítiques públiques."
+      "description": "En temps real. Valoració, posicionament i espais de risc i oportunitat."
     },
     "step3": {
       "title": "Detectar",
-      "description": "Demandes, riscos i oportunitats abans que es converteixin en crisi."
+      "description": "Demandes latents, riscos reputacionals i oportunitats de creixement abans que sigui massa tard."
     },
     "step4": {
       "title": "Optimitzar",
-      "description": "Inversions i polítiques públiques basant-se en evidència, no intuïcions."
+      "description": "Tota actuació i decisió estratègica, basant-se en evidència, basant-se en dades."
     },
     "step5": {
       "title": "Enfortir",
@@ -71,30 +71,26 @@
     "requestDemo": "Sol·licita més informació"
   },
   "Services": {
-    "mainTitle": "Demosmap transforma la informació amb capacitat de gestió intel·ligent",
+    "mainTitle": "Demosmap transforma la informació amb capacitat de gestió intel·ligent.",
     "service1": {
-      "title": "Integració total de fonts",
+      "title": "Integració total de fonts:",
       "description": "Open Data, dades pròpies, dades externes i opinió pública."
     },
     "service2": {
-      "title": "Percepció ciutadana continua",
-      "description": "Mitjançant enquestes estratègiques i microenquestes multicanal visualitzables en temps real."
+      "title": "Percepció ciutadana contínua:",
+      "description": "Mitjançant microenquestes multicanal visualitzables en temps real."
     },
     "service3": {
-      "title": "Microsegmentació avançada",
-      "description": "Que permet entendre i comunicar d'un mode directe a públics específics segons el seu perfil, necessitats i àrea territorial."
+      "title": "Microsegmentació avançada:",
+      "description": "Permet entendre i comunicar d’un mode directe a públics específics segons el seu perfil, interessos i necessitats i àrea territorial."
     },
     "service4": {
-      "title": "Capacitat d’acció",
-      "description": "Completa el cicle entre anàlisi i comunicació directa (WhatsApp i Notificacions Push)."
-    },
-    "service5": {
-      "title": "Enfocament GovTech",
-      "description": "Pensat específicament per a la lògica, temps i desafiaments de la direcció pública en el segle XXI."
+      "title": "Capacitat d’acció:",
+      "description": "Completa el cicle entre anàlisi i comunicació directa mitjançant Notificacions Push o enviaments per WhatsApp."
     }
   },
   "TargetAudience": {
-    "impactStatement": "Governar bé avui exigeix comprendre millor, decidir amb evidència i comunicar amb precisió"
+    "impactStatement": "Liderar avui exigeix comprendre millor, decidir amb evidència i comunicar amb precisió"
   },
   "Thanks": {
     "title": "Gràcies per contactar amb nosaltres!",
