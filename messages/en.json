@@ -8,7 +8,7 @@
   "AboutSection": {
     "video": "videoES",
     "title": "What is Demosmap?",
-    "description": "Demosmap is an intelligence platform that turns data into decisions and micro-segmentation into direct impact on key users. We help institutions and companies deeply understand the context and the citizens they target, through the massive integration of information, data, and opinion in real time.",
+    "description": "Demosmap is a data intelligence technology company that transforms the analysis of behavior, territory, and opinion of target audiences into actionable strategic intelligence. We work for private organizations and public institutions to detect patterns, anticipate trends, and activate effective strategies.",
     "button": "Watch explanatory video"
   },
   "Contact": {
@@ -27,26 +27,31 @@
     "button": "Submit"
   },
   "Diagram": {
-    "title": "How does it help me?",
+    "title": "How does Demosmap help me?",
+    "subtitle": "Replace intuition with intelligence",
     "step1": {
-      "title": "Understand",
-      "description": "The real context of the area of influence and interest, through the combination of proprietary data, external data and citizen perception."
+      "title": "UNDERSTAND YOUR TARGET AUDIENCE BETTER",
+      "description": "Gain a broad and deep view of the interests, needs, and behaviors of your organization’s target audiences, both internal and external."
     },
     "step2": {
-      "title": "Measure",
-      "description": "In real time. Assessment, positioning and spaces of risk and opportunity."
+      "title": "IMPROVE YOUR CAMPAIGNS",
+      "description": "Segment with micro-precision and exponentially increase the impact of your commercial and communication actions."
     },
     "step3": {
-      "title": "Detect",
-      "description": "Latent demands, reputational risks and growth opportunities before it is too late."
+      "title": "DETECT OPPORTUNITIES",
+      "description": "Anticipate trends, behavioral changes, and new needs before it’s too late."
     },
     "step4": {
-      "title": "Optimize",
-      "description": "Every strategic action and decision, based on evidence, based on data."
+      "title": "OPTIMIZE YOUR EXPANSION AND TERRITORIAL PRESENCE",
+      "description": "Identify situations, dynamics, and territorial patterns to make better positioning and growth decisions."
     },
     "step5": {
-      "title": "Strengthen",
-      "description": "Trust and legitimacy, establishing a direct and micro-segmented communication channel with citizens based on perceptions and needs."
+      "title": "PRIORITIZE STRATEGIC DECISIONS",
+      "description": "Reduce uncertainty in your decision-making using intelligence models that respond to your objectives and future vision."
+    },
+    "step6": {
+      "title": "ANTICIPATE FUTURE BEHAVIORS",
+      "description": "Build predictive capacity and respond to the changes and needs of your context and target audiences."
     }
   },
   "Footer": {
@@ -71,26 +76,26 @@
     "langCat": "CAT"
   },
   "Services": {
-    "mainTitle": "Demosmap transforms information into intelligent management capability.",
+    "mainTitle": "There is more data than ever: it’s time to turn it into strategic intelligence.",
     "service1": {
-      "title": "Total Source Integration:",
-      "description": "Open Data, own data, external data and public opinion."
+      "title": "Target Audience Intelligence",
+      "description": "We build structured data ecosystems to understand different population segments based on their behavior, territory, and opinion."
     },
     "service2": {
-      "title": "Continuous Citizen Perception:",
-      "description": "Through multi-channel micro-surveys viewable in real time."
+      "title": "Advanced Segmentation",
+      "description": "We identify target audiences according to their shared patterns and behavioral dynamics. We turn complex markets into actionable and effective strategies."
     },
     "service3": {
-      "title": "Advanced Micro-segmentation:",
-      "description": "Enabling understanding and direct communication to specific audiences based on their profile, interests, needs, and territorial area."
+      "title": "Strategic Targeting",
+      "description": "With proprietary technology we transform insights into concrete actions through segmentation strategies adapted to each population segment, context, and territory."
     },
     "service4": {
-      "title": "Action Capability:",
-      "description": "Completes the loop between analysis and direct communication through Push Notifications or WhatsApp sends."
+      "title": "Predictive Intelligence",
+      "description": "We project predictive scenarios through the accumulation of historical behavioral data. We detect changes in demand and anticipate future scenarios with strategy and intelligence."
     }
   },
   "TargetAudience": {
-    "impactStatement": "Leading today requires understanding better, deciding with evidence, and communicating with precision"
+    "impactStatement": "We process objective data on behavior, territories, and opinion, to understand not just what people do, but why they do it"
   },
   "Thanks": {
     "title": "Thank you for contacting us!",

@@ -8,7 +8,7 @@
   "AboutSection": {
     "video": "videoES",
     "title": "¿Qué es Demosmap?",
-    "description": "Demosmap es una plataforma de inteligencia que convierte datos en decisiones y la microsegmentación en impacto directo en los usuarios clave. Ayudamos a instituciones y empresas a comprender en profundidad el contexto y la ciudadanía a la que se dirigen, mediante la integración masiva de información, datos y opinión en tiempo real.",
+    "description": "Demosmap es una empresa tecnológica de inteligencia de datos que transforma el análisis del comportamiento, territorio y opinión de públicos objetivo en inteligencia estratégica accionable. Trabajamos para organizaciones privadas e instituciones públicas para detectar patrones, anticipar tendencias y activar estrategias efectivas.",
     "button": "Ver video explicativo"
   },
   "Contact": {
@@ -27,26 +27,31 @@
     "button": "Solicitar"
   },
   "Diagram": {
-    "title": "¿Cómo me ayuda?",
+    "title": "¿Cómo me ayuda Demosmap?",
+    "subtitle": "Cambia la intuición por inteligencia",
     "step1": {
-      "title": "Comprender",
-      "description": "El contexto real del área de influencia e interés, mediante la combinación de datos propios, externos y percepción ciudadana."
+      "title": "COMPRENDE MEJOR A TU PÚBLICO OBJETIVO",
+      "description": "Obtén una visión amplia y profunda sobre los intereses, necesidades y comportamientos de los públicos objetivo de tu organización, tanto de los internos como de los externos."
     },
     "step2": {
-      "title": "Medir",
-      "description": "En tiempo real. Valoración, posicionamiento y espacios de riesgo y oportunidad."
+      "title": "MEJORA TUS CAMPAÑAS",
+      "description": "Segmenta con microprecisión y exponencializa el impacto de tus acciones comerciales y comunicativas."
     },
     "step3": {
-      "title": "Detectar",
-      "description": "Demandas latentes, riesgos reputacionales y oportunidades de crecimiento antes de que sea demasiado tarde."
+      "title": "DETECTA OPORTUNIDADES",
+      "description": "Anticipa tendencias, cambios en el comportamiento y nuevas necesidades antes que sea tarde."
     },
     "step4": {
-      "title": "Optimizar",
-      "description": "Toda actuación y decisión estratégica, basándose en evidencia, basándose en datos."
+      "title": "OPTIMIZA TU EXPANSIÓN Y PRESENCIA TERRITORIAL",
+      "description": "Identifica coyunturas, dinámicas y patrones territoriales para tomar mejores decisiones de posicionamiento y crecimiento."
     },
     "step5": {
-      "title": "Fortalecer",
-      "description": "La confianza y la legitimidad, estableciendo un canal directo y microsegmentado de comunicación con la ciudadanía en función a percepciones y necesidades."
+      "title": "PRIORIZA DECISIONES ESTRATÉGICAS",
+      "description": "Reduce incertidumbre en tu toma de decisiones, utilizando modelos de inteligencia que respondan a tus objetivos y visión de futuro."
+    },
+    "step6": {
+      "title": "ANTICIPA COMPORTAMIENTOS FUTUROS",
+      "description": "Construye capacidad predictiva y responde a los cambios y necesidades de tu contexto y tus públicos objetivos."
     }
   },
   "Footer": {
@@ -71,26 +76,26 @@
     "langCat": "CAT"
   },
   "Services": {
-    "mainTitle": "Demosmap transforma la información en capacidad de gestión inteligente.",
+    "mainTitle": "Hay más datos que nunca: es hora de traducirlos en inteligencia estratégica.",
     "service1": {
-      "title": "Integración total de fuentes:",
-      "description": "Open Data, datos propios, datos externos y opinión pública."
+      "title": "Inteligencia de públicos objetivo",
+      "description": "Construimos ecosistemas de datos estructurados para comprender a los diferentes segmentos de población, en función a su comportamiento, territorio y opinión."
     },
     "service2": {
-      "title": "Percepción ciudadana contínua:",
-      "description": "Mediante microencuestas multicanal visualizables en tiempo real."
+      "title": "Segmentación avanzada",
+      "description": "Identificamos públicos objetivo según sus patrones compartidos y dinámicas de comportamiento. Convertimos mercados complejos en estrategias accionables y efectivas."
     },
     "service3": {
-      "title": "Microsegmentación avanzada:",
-      "description": "Permite entender y comunicar de un modo directo a públicos específicos según su perfil, intereses y necesidades y área territorial."
+      "title": "Targeting estratégico",
+      "description": "Con tecnología propia transformamos insights en acciones concretas mediante estrategias de segmentación adaptadas a cada segmento de la población, contexto y territorio."
     },
     "service4": {
-      "title": "Capacidad de acción:",
-      "description": "Completa el ciclo entre análisis y comunicación directa mediante Notificaciones Push o envíos por WhatsApp."
+      "title": "Inteligencia predictiva",
+      "description": "Proyectamos escenarios predictivos mediante la acumulación de datos históricos de comportamiento. Detectamos cambios en la demanda y anticipamos escenarios futuros con estrategia e inteligencia."
     }
   },
   "TargetAudience": {
-    "impactStatement": "Liderar hoy exige comprender mejor, decidir con evidencia y comunicar con precisión"
+    "impactStatement": "Procesamos datos objetivos sobre comportamiento, territorios y opinión, para entender no solo qué hacen las personas, sino el por qué lo hacen"
   },
   "Thanks": {
     "title": "¡Gracias por contactarnos!",

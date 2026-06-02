@@ -8,30 +8,36 @@ const stepsData = [
     label: "01",
     textKey: "step1",
     angle: -90,
-    align: "top-[-120px] left-1/2 -translate-x-1/2 text-center",
+    align: "top-[-150px] left-1/2 -translate-x-1/2 text-center",
   },
   {
     label: "02",
     textKey: "step2",
-    angle: -18,
+    angle: -30,
     align: "top-[-40px] left-[130%]",
   },
   {
     label: "03",
     textKey: "step3",
-    angle: 54,
+    angle: 30,
     align: "bottom-[-40px] left-[130%]",
   },
   {
     label: "04",
     textKey: "step4",
-    angle: 126,
-    align: "bottom-[-40px] right-[130%] text-right",
+    angle: 90,
+    align: "bottom-[-150px] left-1/2 -translate-x-1/2 text-center",
   },
   {
     label: "05",
     textKey: "step5",
-    angle: 198,
+    angle: 150,
+    align: "bottom-[-40px] right-[130%] text-right",
+  },
+  {
+    label: "06",
+    textKey: "step6",
+    angle: 210,
     align: "top-[-40px] right-[130%] text-right",
   },
 ];
@@ -130,12 +136,13 @@ export default function Diagram() {
 
         <div className="absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 text-white text-center font-semibold">
           <p className="text-xl sm:text-2xl border-b-2 border-blue-400 pb-1">{t("title")}</p>
+          <p className="text-sm mt-2 opacity-80">{t("subtitle")}</p>
         </div>
 
         {stepsData.map(({ label, textKey, angle, align }, i) => {
           const rad = (angle * Math.PI) / 180;
-          const x = radius * Math.cos(rad);
-          const y = radius * Math.sin(rad);
+          const x = Math.round(radius * Math.cos(rad) * 100) / 100;
+          const y = Math.round(radius * Math.sin(rad) * 100) / 100;
           const isVisible = i < visibleSteps;
 
           return (

@@ -8,7 +8,7 @@
   "AboutSection": {
     "video": "videoCA",
     "title": "Què és Demosmap?",
-    "description": "Demosmap és una plataforma d’intel·ligència que converteix dades en decisions i la microsegmentació en impacte directe en els usuaris clau. Ajudem a institucions i empreses a comprendre en profunditat el context i la ciutadania a la qual es dirigeixen, mitjançant la integració massiva d’informació, dades i opinió en temps real.",
+    "description": "Demosmap és una empresa tecnològica d’intel·ligència de dades que transforma l’anàlisi del comportament, territori i opinió de públics objectiu en intel·ligència estratègica accionable. Treballem per a organitzacions privades i institucions públiques per detectar patrons, anticipar tendències i activar estratègies efectives.",
     "button": "Veure vídeo explicatiu"
   },
   "Contact": {
@@ -27,26 +27,31 @@
     "button": "Solicitar"
   },
   "Diagram": {
-    "title": "Com m'ajuda?",
+    "title": "Com m’ajuda Demosmap?",
+    "subtitle": "Canvia la intuïció per intel·ligència",
     "step1": {
-      "title": "Comprendre",
-      "description": "El context real de l’àrea d’influència i interès, mitjançant la combinació de dades pròpies, externes i percepció ciutadana."
+      "title": "COMPRÈN MILLOR EL TEU PÚBLIC OBJECTIU",
+      "description": "Obtén una visió àmplia i profunda sobre els interessos, necessitats i comportaments dels públics objectiu de la teva organització, tant dels interns com dels externs."
     },
     "step2": {
-      "title": "Mesurar",
-      "description": "En temps real. Valoració, posicionament i espais de risc i oportunitat."
+      "title": "MILLORA LES TEVES CAMPANYES",
+      "description": "Segmenta amb microprecisió i exponencialitza l’impacte de les teves accions comercials i comunicatives."
     },
     "step3": {
-      "title": "Detectar",
-      "description": "Demandes latents, riscos reputacionals i oportunitats de creixement abans que sigui massa tard."
+      "title": "DETECTA OPORTUNITATS",
+      "description": "Anticipa tendències, canvis en el comportament i noves necessitats abans que sigui tard."
     },
     "step4": {
-      "title": "Optimitzar",
-      "description": "Tota actuació i decisió estratègica, basant-se en evidència, basant-se en dades."
+      "title": "OPTIMITZA LA TEVA EXPANSIÓ I PRESÈNCIA TERRITORIAL",
+      "description": "Identifica conjuntures, dinàmiques i patrons territorials per prendre millors decisions de posicionament i creixement."
     },
     "step5": {
-      "title": "Enfortir",
-      "description": "La confiança i la legitimitat, establint un canal directe i microsegmentat de comunicació amb la ciutadania en funció a percepcions i necessitats."
+      "title": "PRIORITZA DECISIONS ESTRATÈGIQUES",
+      "description": "Redueix incertesa en la presa de decisions, utilitzant models d’intel·ligència que responguin als teus objectius i visió de futur."
+    },
+    "step6": {
+      "title": "ANTICIPA COMPORTAMENTS FUTURS",
+      "description": "Construeix capacitat predictiva i respon als canvis i necessitats del teu context i els teus públics objectiu."
     }
   },
   "Footer": {
@@ -71,26 +76,26 @@
     "requestDemo": "Sol·licita més informació"
   },
   "Services": {
-    "mainTitle": "Demosmap transforma la informació amb capacitat de gestió intel·ligent.",
+    "mainTitle": "Hi ha més dades que mai: és hora de traduir-les en intel·ligència estratègica.",
     "service1": {
-      "title": "Integració total de fonts:",
-      "description": "Open Data, dades pròpies, dades externes i opinió pública."
+      "title": "Intel·ligència de públics objectiu",
+      "description": "Construïm ecosistemes de dades estructurades per comprendre els diferents segments de població, en funció del seu comportament, territori i opinió."
     },
     "service2": {
-      "title": "Percepció ciutadana contínua:",
-      "description": "Mitjançant microenquestes multicanal visualitzables en temps real."
+      "title": "Segmentació avançada",
+      "description": "Identifiquem públics objectiu segons els seus patrons compartits i dinàmiques de comportament. Convertim mercats complexos en estratègies accionables i efectives."
     },
     "service3": {
-      "title": "Microsegmentació avançada:",
-      "description": "Permet entendre i comunicar d’un mode directe a públics específics segons el seu perfil, interessos i necessitats i àrea territorial."
+      "title": "Targeting estratègic",
+      "description": "Amb tecnologia pròpia transformem insights en accions concretes mitjançant estratègies de segmentació adaptades a cada segment de la població, context i territori."
     },
     "service4": {
-      "title": "Capacitat d’acció:",
-      "description": "Completa el cicle entre anàlisi i comunicació directa mitjançant Notificacions Push o enviaments per WhatsApp."
+      "title": "Intel·ligència predictiva",
+      "description": "Projectem escenaris predictius mitjançant l’acumulació de dades històriques de comportament. Detectem canvis en la demanda i anticipem escenaris futurs amb estratègia i intel·ligència."
     }
   },
   "TargetAudience": {
-    "impactStatement": "Liderar avui exigeix comprendre millor, decidir amb evidència i comunicar amb precisió"
+    "impactStatement": "Processem dades objectives sobre comportament, territoris i opinió, per entendre no només què fan les persones, sinó el per què ho fan"
   },
   "Thanks": {
     "title": "Gràcies per contactar amb nosaltres!",
