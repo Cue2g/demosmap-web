@@ -9,36 +9,42 @@ const stepsData = [
     textKey: "step1",
     angle: -90,
     align: "top-[-150px] left-1/2 -translate-x-1/2 text-center",
+    alignShort: "top-[-150px] left-1/2 -translate-x-1/2 text-center",
   },
   {
     label: "02",
     textKey: "step2",
     angle: -30,
     align: "top-[-40px] left-[130%]",
+    alignShort: "top-[-20px] left-[120%]",
   },
   {
     label: "03",
     textKey: "step3",
     angle: 30,
     align: "bottom-[-40px] left-[130%]",
+    alignShort: "bottom-[-20px] left-[120%]",
   },
   {
     label: "04",
     textKey: "step4",
     angle: 90,
     align: "bottom-[-150px] left-1/2 -translate-x-1/2 text-center",
+    alignShort: "bottom-[-70px] left-1/2 -translate-x-1/2 text-center",
   },
   {
     label: "05",
     textKey: "step5",
     angle: 150,
     align: "bottom-[-40px] right-[130%] text-right",
+    alignShort: "bottom-[-20px] right-[120%] text-right",
   },
   {
     label: "06",
     textKey: "step6",
     angle: 210,
     align: "top-[-40px] right-[130%] text-right",
+    alignShort: "top-[-20px] right-[120%] text-right",
   },
 ];
 
@@ -48,16 +54,19 @@ export default function Diagram() {
   const [radius, setRadius] = useState(150);
   const [size, setSize] = useState(500);
   const [isMobile, setIsMobile] = useState(false);
+  const [isShortHeight, setIsShortHeight] = useState(false);
   const [visibleSteps, setVisibleSteps] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleResize = () => {
       const vw = window.innerWidth;
+      const vh = window.innerHeight;
       setIsMobile(vw < 640);
+      setIsShortHeight(vh < 680 && vw >= 640);
       const s = vw < 640 ? 280 : vw < 768 ? 400 : vw < 1024 ? 500 : 600;
       setSize(s);
-      setRadius(s / 3.4);
+      setRadius(s * 0.3);
     };
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -113,7 +122,9 @@ export default function Diagram() {
     <div
       ref={containerRef}
       id="diagram"
-      className="relative w-full min-h-[120vh] flex items-center justify-center bg-[#0A0B37] overflow-hidden px-4"
+      className={`relative w-full flex items-center justify-center bg-[#0A0B37] overflow-hidden px-4 ${
+        isShortHeight ? "min-h-[800px]" : "min-h-[120vh]"
+      }`}
     >
       <div
         className="relative mx-auto mt-20"
@@ -135,15 +146,16 @@ export default function Diagram() {
         ))}
 
         <div className="absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 text-white text-center font-semibold">
-          <p className="text-xl sm:text-2xl border-b-2 border-blue-400 pb-1">{t("title")}</p>
-          <p className="text-sm mt-2 opacity-80">{t("subtitle")}</p>
+          <p className={`border-b-2 border-blue-400 pb-1 ${isShortHeight ? "text-lg" : "text-xl sm:text-2xl"}`}>{t("title")}</p>
+          <p className={`mt-2 opacity-80 ${isShortHeight ? "text-xs" : "text-sm"}`}>{t("subtitle")}</p>
         </div>
 
-        {stepsData.map(({ label, textKey, angle, align }, i) => {
+        {stepsData.map(({ label, textKey, angle, align, alignShort }, i) => {
           const rad = (angle * Math.PI) / 180;
           const x = Math.round(radius * Math.cos(rad) * 100) / 100;
           const y = Math.round(radius * Math.sin(rad) * 100) / 100;
           const isVisible = i < visibleSteps;
+          const currentAlign = isShortHeight ? alignShort : align;
 
           return (
             <div
@@ -164,12 +176,12 @@ export default function Diagram() {
                   {label}
                 </div>
                 <div
-                  className={`absolute text-white w-[250px] space-y-1 ${align}`}
+                  className={`absolute text-white w-[250px] space-y-1 ${currentAlign}`}
                 >
-                  <p className="text-sm font-bold text-blue-400 uppercase tracking-wider">
+                  <p className={`font-bold text-blue-400 uppercase tracking-wider ${isShortHeight ? "text-xs" : "text-sm"}`}>
                     {t(`${textKey}.title`)}
                   </p>
-                  <p className="text-xs leading-relaxed opacity-80">
+                  <p className={`leading-relaxed opacity-80 ${isShortHeight ? "text-[11px]" : "text-xs"}`}>
                     {t(`${textKey}.description`)}
                   </p>
                 </div>
