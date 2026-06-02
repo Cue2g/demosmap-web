@@ -17,23 +17,19 @@ export default function Services() {
           <ColumsService
             title={t("service1.title")}
             description={t("service1.description")}
-            index={1}
           />
           <ColumsService
             title={t("service2.title")}
             description={t("service2.description")}
-            index={2}
           />
           <ColumsService
             title={t("service3.title")}
             description={t("service3.description")}
-            index={3}
           />
 
           <ColumsService
             title={t("service4.title")}
             description={t("service4.description")}
-            index={4}
           />
         </div>
       </div>

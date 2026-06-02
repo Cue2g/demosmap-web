@@ -1,13 +1,11 @@
 interface ColumsServiceProps {
   title: string;
   description: string;
-  index: number;
 }
 
 export default function ColumsService({
   title,
   description,
-  index,
 }: ColumsServiceProps) {
   return (
     <div className="max-w-[350px] w-full space-y-4 flex flex-col items-start px-2">
